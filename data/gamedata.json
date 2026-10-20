@@ -1,0 +1,6144 @@
+{
+ "generatedAt": "2026-10-20T14:37:05.091Z",
+ "gameVersion": "1.6.4871 rev595",
+ "mods": [
+  "Core",
+  "Biotech",
+  "Odyssey"
+ ],
+ "quality": {
+  "MeleeWeapon_DamageMultiplier": {
+   "Awful": 0.8,
+   "Poor": 0.9,
+   "Normal": 1,
+   "Good": 1.1,
+   "Excellent": 1.2,
+   "Masterwork": 1.45,
+   "Legendary": 1.65
+  },
+  "RangedWeapon_DamageMultiplier": {
+   "Awful": 0.9,
+   "Poor": 1,
+   "Normal": 1,
+   "Good": 1,
+   "Excellent": 1,
+   "Masterwork": 1.25,
+   "Legendary": 1.5
+  },
+  "RangedWeapon_ArmorPenetrationMultiplier": {
+   "Awful": 0.9,
+   "Poor": 1,
+   "Normal": 1,
+   "Good": 1,
+   "Excellent": 1,
+   "Masterwork": 1.25,
+   "Legendary": 1.5
+  },
+  "AccuracyTouch": {
+   "Awful": 0.8,
+   "Poor": 0.9,
+   "Normal": 1,
+   "Good": 1.1,
+   "Excellent": 1.2,
+   "Masterwork": 1.35,
+   "Legendary": 1.5
+  }
+ },
+ "pawnCurves": {
+  "ShootingAccuracyPawn": [
+   [
+    -20,
+    0.7
+   ],
+   [
+    -10,
+    0.8
+   ],
+   [
+    -6,
+    0.83
+   ],
+   [
+    -4,
+    0.85
+   ],
+   [
+    -2,
+    0.87
+   ],
+   [
+    0,
+    0.89
+   ],
+   [
+    2,
+    0.93
+   ],
+   [
+    4,
+    0.94
+   ],
+   [
+    6,
+    0.95
+   ],
+   [
+    8,
+    0.96
+   ],
+   [
+    10,
+    0.97
+   ],
+   [
+    12,
+    0.975
+   ],
+   [
+    14,
+    0.98
+   ],
+   [
+    16,
+    0.98333
+   ],
+   [
+    18,
+    0.98666
+   ],
+   [
+    20,
+    0.99
+   ],
+   [
+    22,
+    0.9925
+   ],
+   [
+    26,
+    0.995
+   ],
+   [
+    30,
+    0.9965
+   ],
+   [
+    40,
+    0.998
+   ],
+   [
+    60,
+    0.999
+   ]
+  ],
+  "MeleeHitChance": [
+   [
+    -20,
+    0.05
+   ],
+   [
+    -10,
+    0.1
+   ],
+   [
+    0,
+    0.5
+   ],
+   [
+    10,
+    0.8
+   ],
+   [
+    20,
+    0.9
+   ],
+   [
+    40,
+    0.96
+   ],
+   [
+    60,
+    0.98
+   ]
+  ],
+  "MeleeDodgeChance": [
+   [
+    5,
+    0
+   ],
+   [
+    20,
+    0.3
+   ],
+   [
+    60,
+    0.5
+   ]
+  ]
+ },
+ "armorCategories": {
+  "Sharp": {
+   "multStat": "SharpDamageMultiplier",
+   "armorRatingStat": "ArmorRating_Sharp"
+  },
+  "Blunt": {
+   "multStat": "BluntDamageMultiplier",
+   "armorRatingStat": "ArmorRating_Blunt"
+  },
+  "Heat": {
+   "armorRatingStat": "ArmorRating_Heat"
+  }
+ },
+ "damageDefs": {
+  "Flame": {
+   "label": "flame",
+   "armorCategory": "Heat",
+   "defaultDamage": 10,
+   "defaultArmorPenetration": 0
+  },
+  "Burn": {
+   "label": "burn",
+   "armorCategory": "Heat",
+   "defaultDamage": 10,
+   "defaultArmorPenetration": 0
+  },
+  "Frostbite": {
+   "label": "frostbite"
+  },
+  "TornadoScratch": {
+   "label": "scratch",
+   "armorCategory": "Sharp"
+  },
+  "SurgicalCut": {
+   "label": "surgical cut",
+   "armorCategory": ""
+  },
+  "ExecutionCut": {
+   "label": "execution cut",
+   "armorCategory": ""
+  },
+  "Cut": {
+   "label": "cut",
+   "armorCategory": "Sharp"
+  },
+  "Crush": {
+   "label": "crush",
+   "armorCategory": "Blunt"
+  },
+  "Blunt": {
+   "label": "blunt",
+   "armorCategory": "Blunt"
+  },
+  "Poke": {
+   "label": "blunt",
+   "armorCategory": "Blunt"
+  },
+  "Demolish": {
+   "label": "blunt",
+   "armorCategory": "Blunt"
+  },
+  "Stab": {
+   "label": "stab",
+   "armorCategory": "Sharp"
+  },
+  "Scratch": {
+   "label": "scratch",
+   "armorCategory": "Sharp"
+  },
+  "ScratchToxic": {
+   "label": "toxic scratch",
+   "armorCategory": "Sharp"
+  },
+  "Bite": {
+   "label": "bite",
+   "armorCategory": "Sharp"
+  },
+  "ToxicBite": {
+   "label": "toxic bite",
+   "armorCategory": "Sharp"
+  },
+  "Deterioration": {
+   "label": "deterioration"
+  },
+  "Mining": {
+   "label": "mining"
+  },
+  "Rotting": {
+   "label": "rotting"
+  },
+  "Extinguish": {
+   "label": "extinguish",
+   "defaultDamage": 999999
+  },
+  "Bomb": {
+   "label": "bomb",
+   "armorCategory": "Sharp",
+   "defaultDamage": 50,
+   "defaultArmorPenetration": 0.1,
+   "defaultStoppingPower": 0.5,
+   "isExplosive": true
+  },
+  "BombSuper": {
+   "label": "bomb",
+   "armorCategory": "Sharp",
+   "defaultDamage": 550,
+   "defaultArmorPenetration": 1.3,
+   "defaultStoppingPower": 2,
+   "isExplosive": true
+  },
+  "Smoke": {
+   "label": "smoke",
+   "defaultDamage": 0
+  },
+  "Thump": {
+   "label": "thump",
+   "armorCategory": "Sharp",
+   "defaultDamage": 5,
+   "defaultArmorPenetration": 0,
+   "isExplosive": true
+  },
+  "Vaporize": {
+   "label": "vaporize",
+   "armorCategory": "Heat",
+   "defaultDamage": 800,
+   "defaultArmorPenetration": 1,
+   "defaultStoppingPower": 1.5
+  },
+  "AcidBurn": {
+   "label": "acid burn",
+   "armorCategory": "Sharp",
+   "defaultDamage": 10,
+   "defaultArmorPenetration": 0
+  },
+  "Decayed": {
+   "label": "decayed organ"
+  },
+  "Beam": {
+   "label": "beam",
+   "armorCategory": "Heat",
+   "defaultDamage": 10,
+   "defaultArmorPenetration": 0.5
+  },
+  "Nerve": {
+   "label": "nerve",
+   "armorCategory": "Sharp"
+  },
+  "NerveStun": {
+   "label": "nerve stun"
+  },
+  "RangedStab": {
+   "label": "stab",
+   "armorCategory": "Sharp"
+  },
+  "Bullet": {
+   "label": "bullet",
+   "armorCategory": "Sharp"
+  },
+  "Arrow": {
+   "label": "arrow",
+   "armorCategory": "Sharp"
+  },
+  "ArrowHighVelocity": {
+   "label": "arrow",
+   "armorCategory": "Sharp"
+  },
+  "Stun": {
+   "label": "stun",
+   "defaultDamage": 20
+  },
+  "EMP": {
+   "label": "EMP",
+   "defaultDamage": 50
+  },
+  "ToxGas": {
+   "label": "tox gas",
+   "defaultDamage": 0
+  },
+  "BulletToxic": {
+   "label": "toxic bullet",
+   "armorCategory": "Sharp"
+  },
+  "MechBandShockwave": {
+   "label": "mech-band shockwave",
+   "defaultDamage": 50
+  },
+  "PorcupineBite": {
+   "label": "bite",
+   "armorCategory": "Sharp"
+  },
+  "PorcupineScratch": {
+   "label": "scratch",
+   "armorCategory": "Sharp"
+  },
+  "VacuumBurn": {
+   "label": "vacuum burn",
+   "defaultArmorPenetration": 0
+  },
+  "MiningBomb": {
+   "label": "mining bomb",
+   "armorCategory": "Sharp",
+   "defaultDamage": 50,
+   "defaultArmorPenetration": 0.1,
+   "defaultStoppingPower": 0.5,
+   "isExplosive": true
+  },
+  "Bullet_TraitTox": {
+   "label": "bullet",
+   "armorCategory": "Sharp"
+  },
+  "Bullet_TraitIncendiary": {
+   "label": "bullet",
+   "armorCategory": "Sharp"
+  },
+  "BeamBypassShields": {
+   "label": "beam",
+   "armorCategory": "Heat",
+   "defaultDamage": 10,
+   "defaultArmorPenetration": 0.5
+  }
+ },
+ "weapons": [
+  {
+   "defName": "AlphaThrumboHorn",
+   "label": "alpha thrumbo horn",
+   "source": "Odyssey",
+   "techLevel": "Neolithic",
+   "kind": "melee",
+   "categories": [
+    "ItemsMisc"
+   ],
+   "weaponClasses": [
+    "Melee",
+    "MeleePiercer"
+   ],
+   "improvised": 2,
+   "mass": 2,
+   "marketValue": 3000,
+   "maxHitPoints": 300,
+   "tools": [
+    {
+     "label": "point",
+     "capacities": [
+      "Scratch",
+      "Stab"
+     ],
+     "damageDefs": [
+      "Scratch",
+      "Stab"
+     ],
+     "power": 32,
+     "cooldownTime": 1.6
+    },
+    {
+     "label": "base",
+     "capacities": [
+      "Blunt"
+     ],
+     "damageDefs": [
+      "Blunt"
+     ],
+     "power": 9,
+     "cooldownTime": 1.4
+    }
+   ]
+  },
+  {
+   "defName": "Gun_AssaultRifle",
+   "label": "assault rifle",
+   "source": "Core",
+   "techLevel": "Industrial",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsRanged"
+   ],
+   "weaponTags": [
+    "Gun",
+    "IndustrialGunAdvanced",
+    "AssaultRifle"
+   ],
+   "weaponClasses": [
+    "Ranged"
+   ],
+   "hasQuality": true,
+   "costList": {
+    "Steel": 60,
+    "ComponentIndustrial": 7
+   },
+   "researchPrerequisite": "PrecisionRifling",
+   "mass": 3.5,
+   "workToMake": 40000,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 1,
+    "range": 30.9,
+    "burstShotCount": 3,
+    "ticksBetweenBurstShots": 10,
+    "projectile": {
+     "defName": "Bullet_AssaultRifle",
+     "label": "assault rifle bullet",
+     "damageDef": "Bullet",
+     "damage": 11,
+     "speed": 70
+    },
+    "cooldown": 1.7,
+    "accuracy": {
+     "touch": 0.6,
+     "short": 0.7,
+     "medium": 0.65,
+     "long": 0.55
+    }
+   },
+   "tools": [
+    {
+     "label": "stock",
+     "capacities": [
+      "Blunt"
+     ],
+     "damageDefs": [
+      "Blunt"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    },
+    {
+     "label": "barrel",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    }
+   ]
+  },
+  {
+   "defName": "Gun_Autopistol",
+   "label": "autopistol",
+   "source": "Core",
+   "techLevel": "Industrial",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsRanged"
+   ],
+   "weaponTags": [
+    "Gun",
+    "SimpleGun",
+    "Autopistol"
+   ],
+   "weaponClasses": [
+    "Ranged",
+    "RangedLight"
+   ],
+   "hasQuality": true,
+   "costList": {
+    "Steel": 30,
+    "ComponentIndustrial": 2
+   },
+   "researchPrerequisite": "BlowbackOperation",
+   "mass": 1.2,
+   "workToMake": 5000,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 0.3,
+    "range": 25.9,
+    "burstShotCount": 1,
+    "ticksBetweenBurstShots": 15,
+    "projectile": {
+     "defName": "Bullet_Autopistol",
+     "label": "autopistol bullet",
+     "damageDef": "Bullet",
+     "damage": 10,
+     "speed": 55
+    },
+    "cooldown": 1,
+    "accuracy": {
+     "touch": 0.8,
+     "short": 0.7,
+     "medium": 0.4,
+     "long": 0.3
+    }
+   },
+   "tools": [
+    {
+     "label": "grip",
+     "capacities": [
+      "Blunt"
+     ],
+     "damageDefs": [
+      "Blunt"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    },
+    {
+     "label": "barrel",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    }
+   ]
+  },
+  {
+   "defName": "Gun_BeamGraser",
+   "label": "beam graser",
+   "source": "Biotech",
+   "techLevel": "Spacer",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsRanged"
+   ],
+   "weaponTags": [
+    "BeamGraserGun"
+   ],
+   "weaponClasses": [
+    "Ranged"
+   ],
+   "mechOnly": true,
+   "mass": 4,
+   "workToMake": 47000,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_ShootBeam",
+    "warmupTime": 1,
+    "range": 24.9,
+    "minRange": 3.9,
+    "burstShotCount": 5,
+    "ticksBetweenBurstShots": 22,
+    "beamDamageDef": "Beam",
+    "beamWidth": 6,
+    "cooldown": 1.7,
+    "accuracy": {
+     "touch": 0.6,
+     "short": 0.7,
+     "medium": 0.65,
+     "long": 0.55
+    }
+   },
+   "tools": [
+    {
+     "label": "barrel",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    }
+   ]
+  },
+  {
+   "defName": "Gun_BeamRepeater",
+   "label": "beam repeater",
+   "source": "Odyssey",
+   "techLevel": "Spacer",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsRanged"
+   ],
+   "weaponTags": [
+    "Gun",
+    "GunHeavy",
+    "WeaponBeamRepeater"
+   ],
+   "weaponClasses": [
+    "Ranged",
+    "RangedHeavy",
+    "Ultratech"
+   ],
+   "hasQuality": true,
+   "costList": {
+    "Plasteel": 40,
+    "Steel": 30,
+    "ComponentSpacer": 3
+   },
+   "researchPrerequisite": "BeamWeapons",
+   "mass": 10,
+   "workToMake": 60000,
+   "maxHitPoints": 100,
+   "equippedStatOffsets": {
+    "MoveSpeed": -0.25
+   },
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 4,
+    "range": 21.9,
+    "burstShotCount": 30,
+    "ticksBetweenBurstShots": 10,
+    "projectile": {
+     "defName": "Bullet_BeamRepeater",
+     "label": "beam repeater laser",
+     "damageDef": "BeamBypassShields",
+     "damage": 5,
+     "armorPenetration": 0.5
+    },
+    "cooldown": 3,
+    "accuracy": {
+     "touch": 0.65,
+     "short": 0.72,
+     "medium": 0.65,
+     "long": 0.6
+    }
+   },
+   "tools": [
+    {
+     "label": "barrels",
+     "capacities": [
+      "Blunt"
+     ],
+     "damageDefs": [
+      "Blunt"
+     ],
+     "power": 11.7,
+     "cooldownTime": 2.6
+    }
+   ]
+  },
+  {
+   "defName": "Gun_BoltActionRifle",
+   "label": "bolt-action rifle",
+   "source": "Core",
+   "techLevel": "Industrial",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsRanged"
+   ],
+   "weaponTags": [
+    "Gun"
+   ],
+   "weaponClasses": [
+    "Ranged",
+    "LongShots"
+   ],
+   "hasQuality": true,
+   "costList": {
+    "Steel": 60,
+    "ComponentIndustrial": 3
+   },
+   "researchPrerequisite": "Gunsmithing",
+   "mass": 3.5,
+   "workToMake": 12000,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 1.7,
+    "range": 36.9,
+    "burstShotCount": 1,
+    "ticksBetweenBurstShots": 15,
+    "projectile": {
+     "defName": "Bullet_BoltActionRifle",
+     "label": "bolt-action rifle bullet",
+     "damageDef": "Bullet",
+     "damage": 18,
+     "stoppingPower": 1.5,
+     "speed": 70
+    },
+    "cooldown": 1.5,
+    "accuracy": {
+     "touch": 0.65,
+     "short": 0.8,
+     "medium": 0.9,
+     "long": 0.8
+    }
+   },
+   "tools": [
+    {
+     "label": "stock",
+     "capacities": [
+      "Blunt"
+     ],
+     "damageDefs": [
+      "Blunt"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    },
+    {
+     "label": "barrel",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    }
+   ]
+  },
+  {
+   "defName": "MeleeWeapon_BreachAxe",
+   "label": "breach axe",
+   "source": "Core",
+   "techLevel": "Neolithic",
+   "kind": "melee",
+   "categories": [
+    "WeaponsMelee"
+   ],
+   "weaponTags": [
+    "NeolithicMeleeDestructive"
+   ],
+   "weaponClasses": [
+    "MeleeBlunt"
+   ],
+   "hasQuality": true,
+   "stuffCategories": [
+    "Metallic"
+   ],
+   "costStuffCount": 50,
+   "researchPrerequisite": "Smithing",
+   "mass": 1.1,
+   "workToMake": 5000,
+   "maxHitPoints": 100,
+   "tools": [
+    {
+     "label": "handle",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    },
+    {
+     "label": "head",
+     "capacities": [
+      "Demolish"
+     ],
+     "damageDefs": [
+      "Demolish"
+     ],
+     "power": 7.5,
+     "cooldownTime": 1
+    }
+   ]
+  },
+  {
+   "defName": "Gun_ChainShotgun",
+   "label": "chain shotgun",
+   "source": "Core",
+   "techLevel": "Industrial",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsRanged"
+   ],
+   "weaponTags": [
+    "Gun",
+    "IndustrialGunAdvanced",
+    "ShortShots"
+   ],
+   "weaponClasses": [
+    "Ranged",
+    "ShortShots"
+   ],
+   "hasQuality": true,
+   "costList": {
+    "Steel": 70,
+    "ComponentIndustrial": 5
+   },
+   "researchPrerequisite": "GasOperation",
+   "mass": 4.5,
+   "workToMake": 31000,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 1.2,
+    "range": 12.9,
+    "burstShotCount": 3,
+    "ticksBetweenBurstShots": 10,
+    "projectile": {
+     "defName": "Bullet_Shotgun",
+     "label": "shotgun blast",
+     "damageDef": "Bullet",
+     "damage": 18,
+     "armorPenetration": 0.14,
+     "stoppingPower": 3,
+     "speed": 55
+    },
+    "cooldown": 1.35,
+    "accuracy": {
+     "touch": 0.57,
+     "short": 0.64,
+     "medium": 0.55,
+     "long": 0.45
+    }
+   },
+   "tools": [
+    {
+     "label": "stock",
+     "capacities": [
+      "Blunt"
+     ],
+     "damageDefs": [
+      "Blunt"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    },
+    {
+     "label": "barrel",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    }
+   ]
+  },
+  {
+   "defName": "Gun_ChargeLance",
+   "label": "charge lance",
+   "source": "Core",
+   "techLevel": "Spacer",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsRanged"
+   ],
+   "weaponTags": [
+    "Gun",
+    "MechanoidGunMedium",
+    "SpacerGun"
+   ],
+   "weaponClasses": [
+    "Ranged",
+    "RangedHeavy"
+   ],
+   "hasQuality": true,
+   "costList": {
+    "Plasteel": 60,
+    "ComponentSpacer": 3
+   },
+   "researchPrerequisite": "ChargedShot",
+   "mass": 8,
+   "workToMake": 60000,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 1.7,
+    "range": 32.9,
+    "burstShotCount": 1,
+    "ticksBetweenBurstShots": 15,
+    "projectile": {
+     "defName": "Bullet_ChargeLance",
+     "label": "charge lance shot",
+     "damageDef": "Bullet",
+     "damage": 30,
+     "stoppingPower": 1.5,
+     "speed": 120
+    },
+    "cooldown": 2.7,
+    "accuracy": {
+     "touch": 0.65,
+     "short": 0.85,
+     "medium": 0.85,
+     "long": 0.75
+    }
+   },
+   "tools": [
+    {
+     "label": "barrel",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    }
+   ]
+  },
+  {
+   "defName": "Gun_ChargeRifle",
+   "label": "charge rifle",
+   "source": "Core",
+   "techLevel": "Spacer",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsRanged"
+   ],
+   "weaponTags": [
+    "Gun",
+    "SpacerGun"
+   ],
+   "weaponClasses": [
+    "Ranged",
+    "RangedLight"
+   ],
+   "hasQuality": true,
+   "costList": {
+    "Plasteel": 50,
+    "ComponentSpacer": 2
+   },
+   "researchPrerequisite": "ChargedShot",
+   "mass": 4.6,
+   "workToMake": 45000,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 1,
+    "range": 27.9,
+    "burstShotCount": 3,
+    "ticksBetweenBurstShots": 12,
+    "projectile": {
+     "defName": "Bullet_ChargeRifle",
+     "label": "charge shot",
+     "damageDef": "Bullet",
+     "damage": 16,
+     "armorPenetration": 0.35,
+     "speed": 70
+    },
+    "cooldown": 2,
+    "accuracy": {
+     "touch": 0.55,
+     "short": 0.64,
+     "medium": 0.55,
+     "long": 0.45
+    }
+   },
+   "tools": [
+    {
+     "label": "stock",
+     "capacities": [
+      "Blunt"
+     ],
+     "damageDefs": [
+      "Blunt"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    },
+    {
+     "label": "barrel",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    }
+   ]
+  },
+  {
+   "defName": "MeleeWeapon_Club",
+   "label": "club",
+   "source": "Core",
+   "techLevel": "Neolithic",
+   "kind": "melee",
+   "categories": [
+    "WeaponsMelee"
+   ],
+   "weaponTags": [
+    "NeolithicMeleeBasic"
+   ],
+   "weaponClasses": [
+    "Melee",
+    "MeleeBlunt",
+    "Neolithic"
+   ],
+   "stuffCategories": [
+    "Metallic",
+    "Woody",
+    "Stony"
+   ],
+   "costStuffCount": 40,
+   "mass": 2,
+   "workToMake": 1200,
+   "maxHitPoints": 100,
+   "tools": [
+    {
+     "label": "handle",
+     "capacities": [
+      "Poke"
+     ],
+     "damageDefs": [
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    },
+    {
+     "label": "head",
+     "capacities": [
+      "Blunt"
+     ],
+     "damageDefs": [
+      "Blunt"
+     ],
+     "power": 14,
+     "cooldownTime": 2
+    }
+   ]
+  },
+  {
+   "defName": "Gun_DoomsdayRocket",
+   "label": "doomsday rocket launcher",
+   "source": "Core",
+   "techLevel": "Spacer",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsRanged"
+   ],
+   "weaponTags": [
+    "Gun",
+    "GunSingleUse"
+   ],
+   "weaponClasses": [
+    "Ranged",
+    "RangedHeavy"
+   ],
+   "singleUse": true,
+   "mass": 8,
+   "marketValue": 1000,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_ShootOneUse",
+    "warmupTime": 4.5,
+    "range": 35.9,
+    "burstShotCount": 1,
+    "ticksBetweenBurstShots": 15,
+    "forcedMissRadius": 1.9,
+    "projectile": {
+     "defName": "Bullet_DoomsdayRocket",
+     "label": "doomsday rocket",
+     "damageDef": "Bomb",
+     "speed": 50,
+     "explosionRadius": 7.8
+    },
+    "cooldown": 4.5,
+    "accuracy": {
+     "touch": 1,
+     "short": 1,
+     "medium": 1,
+     "long": 1
+    }
+   },
+   "tools": [
+    {
+     "label": "barrel",
+     "capacities": [
+      "Blunt"
+     ],
+     "damageDefs": [
+      "Blunt"
+     ],
+     "power": 11.7,
+     "cooldownTime": 2.6
+    }
+   ]
+  },
+  {
+   "defName": "ElephantTusk",
+   "label": "elephant tusk",
+   "source": "Core",
+   "techLevel": "Neolithic",
+   "kind": "melee",
+   "categories": [
+    "ItemsMisc"
+   ],
+   "weaponClasses": [
+    "Melee",
+    "MeleePiercer"
+   ],
+   "improvised": 2,
+   "mass": 1.8,
+   "marketValue": 80,
+   "maxHitPoints": 150,
+   "tools": [
+    {
+     "label": "point",
+     "capacities": [
+      "Scratch",
+      "Stab"
+     ],
+     "damageDefs": [
+      "Scratch",
+      "Stab"
+     ],
+     "power": 18.2,
+     "cooldownTime": 2.6
+    },
+    {
+     "label": "base",
+     "capacities": [
+      "Blunt"
+     ],
+     "damageDefs": [
+      "Blunt"
+     ],
+     "power": 9,
+     "cooldownTime": 2,
+     "chanceFactor": 0.5
+    }
+   ]
+  },
+  {
+   "defName": "Weapon_GrenadeEMP",
+   "label": "EMP grenades",
+   "source": "Core",
+   "techLevel": "Industrial",
+   "kind": "ranged",
+   "categories": [
+    "Grenades"
+   ],
+   "weaponTags": [
+    "GrenadeEMP"
+   ],
+   "weaponClasses": [
+    "Ranged"
+   ],
+   "costList": {
+    "Steel": 20,
+    "ComponentIndustrial": 6
+   },
+   "researchPrerequisite": "MicroelectronicsBasics",
+   "mass": 1,
+   "workToMake": 24000,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_LaunchProjectile",
+    "warmupTime": 1.5,
+    "range": 12.9,
+    "burstShotCount": 1,
+    "ticksBetweenBurstShots": 15,
+    "forcedMissRadius": 1.9,
+    "projectile": {
+     "defName": "Proj_GrenadeEMP",
+     "label": "EMP grenade",
+     "damageDef": "EMP",
+     "speed": 12,
+     "explosionRadius": 3.5,
+     "explosionDelay": 100
+    },
+    "cooldown": 2.66,
+    "accuracy": {
+     "touch": 1,
+     "short": 1,
+     "medium": 1,
+     "long": 1
+    }
+   }
+  },
+  {
+   "defName": "Gun_EmpLauncher",
+   "label": "EMP launcher",
+   "source": "Core",
+   "techLevel": "Industrial",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsRanged"
+   ],
+   "weaponTags": [
+    "Gun",
+    "GrenadeEMP"
+   ],
+   "weaponClasses": [
+    "Ranged",
+    "RangedHeavy"
+   ],
+   "hasQuality": true,
+   "costList": {
+    "Steel": 75,
+    "ComponentIndustrial": 8
+   },
+   "researchPrerequisite": "MicroelectronicsBasics",
+   "mass": 3.4,
+   "workToMake": 30000,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 3.5,
+    "range": 23.9,
+    "burstShotCount": 1,
+    "ticksBetweenBurstShots": 15,
+    "forcedMissRadius": 1.9,
+    "projectile": {
+     "defName": "Bullet_EMPLauncher",
+     "label": "EMP launcher shell",
+     "damageDef": "EMP",
+     "speed": 40,
+     "explosionRadius": 1.1
+    },
+    "cooldown": 3.5,
+    "accuracy": {
+     "touch": 1,
+     "short": 1,
+     "medium": 1,
+     "long": 1
+    }
+   },
+   "tools": [
+    {
+     "label": "stock",
+     "capacities": [
+      "Blunt"
+     ],
+     "damageDefs": [
+      "Blunt"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    },
+    {
+     "label": "barrel",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    }
+   ]
+  },
+  {
+   "defName": "Flamebow",
+   "label": "flamebow",
+   "source": "Biotech",
+   "techLevel": "Neolithic",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsRanged"
+   ],
+   "weaponTags": [
+    "Neolithic",
+    "NeolithicRangedFlame"
+   ],
+   "weaponClasses": [
+    "Neolithic",
+    "Ranged",
+    "RangedLight"
+   ],
+   "hasQuality": true,
+   "mass": 0.8,
+   "marketValue": 45,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 1.35,
+    "range": 22.9,
+    "burstShotCount": 1,
+    "ticksBetweenBurstShots": 15,
+    "projectile": {
+     "defName": "Proj_FireArrow",
+     "label": "fire arrow",
+     "damageDef": "Arrow",
+     "damage": 6,
+     "speed": 44
+    },
+    "cooldown": 1.65,
+    "accuracy": {
+     "touch": 0.75,
+     "short": 0.65,
+     "medium": 0.45,
+     "long": 0.25
+    }
+   },
+   "tools": [
+    {
+     "label": "limb",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    }
+   ]
+  },
+  {
+   "defName": "Weapon_GrenadeFrag",
+   "label": "frag grenades",
+   "source": "Core",
+   "techLevel": "Industrial",
+   "kind": "ranged",
+   "categories": [
+    "Grenades"
+   ],
+   "weaponTags": [
+    "GrenadeDestructive",
+    "EmpireGrenadeDestructive"
+   ],
+   "weaponClasses": [
+    "Ranged"
+   ],
+   "costList": {
+    "Steel": 20,
+    "Chemfuel": 80
+   },
+   "researchPrerequisite": "Machining",
+   "mass": 1,
+   "workToMake": 12000,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_LaunchProjectile",
+    "warmupTime": 1.5,
+    "range": 12.9,
+    "burstShotCount": 1,
+    "ticksBetweenBurstShots": 15,
+    "forcedMissRadius": 1.9,
+    "projectile": {
+     "defName": "Proj_GrenadeFrag",
+     "label": "frag grenade",
+     "damageDef": "Bomb",
+     "speed": 12,
+     "explosionRadius": 1.9,
+     "explosionDelay": 100
+    },
+    "cooldown": 2.66,
+    "accuracy": {
+     "touch": 1,
+     "short": 1,
+     "medium": 1,
+     "long": 1
+    }
+   }
+  },
+  {
+   "defName": "MeleeWeapon_Gladius",
+   "label": "gladius",
+   "source": "Core",
+   "techLevel": "Medieval",
+   "kind": "melee",
+   "categories": [
+    "WeaponsMelee"
+   ],
+   "weaponTags": [
+    "MedievalMeleeDecent"
+   ],
+   "weaponClasses": [
+    "Melee",
+    "MeleePiercer"
+   ],
+   "hasQuality": true,
+   "stuffCategories": [
+    "Metallic",
+    "Woody"
+   ],
+   "costStuffCount": 50,
+   "researchPrerequisite": "Smithing",
+   "mass": 0.85,
+   "workToMake": 12000,
+   "maxHitPoints": 100,
+   "tools": [
+    {
+     "label": "handle",
+     "capacities": [
+      "Blunt"
+     ],
+     "damageDefs": [
+      "Blunt"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    },
+    {
+     "label": "point",
+     "capacities": [
+      "Stab"
+     ],
+     "damageDefs": [
+      "Stab"
+     ],
+     "power": 16,
+     "cooldownTime": 2
+    },
+    {
+     "label": "edge",
+     "capacities": [
+      "Cut"
+     ],
+     "damageDefs": [
+      "Cut"
+     ],
+     "power": 16,
+     "cooldownTime": 2
+    }
+   ]
+  },
+  {
+   "defName": "Bow_Great",
+   "label": "greatbow",
+   "source": "Core",
+   "techLevel": "Neolithic",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsRanged"
+   ],
+   "weaponTags": [
+    "Neolithic",
+    "NeolithicRangedHeavy",
+    "NeolithicRangedChief"
+   ],
+   "weaponClasses": [
+    "Neolithic",
+    "Ranged",
+    "RangedHeavy"
+   ],
+   "hasQuality": true,
+   "costList": {
+    "WoodLog": 60
+   },
+   "researchPrerequisite": "Greatbow",
+   "mass": 3,
+   "workToMake": 9000,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 2,
+    "range": 29.9,
+    "burstShotCount": 1,
+    "ticksBetweenBurstShots": 15,
+    "projectile": {
+     "defName": "Arrow_Great",
+     "label": "greatbow arrow",
+     "damageDef": "Arrow",
+     "damage": 17,
+     "armorPenetration": 0.15,
+     "stoppingPower": 1.5,
+     "speed": 49
+    },
+    "cooldown": 1.5,
+    "accuracy": {
+     "touch": 0.65,
+     "short": 0.85,
+     "medium": 0.75,
+     "long": 0.5
+    }
+   },
+   "tools": [
+    {
+     "label": "limb",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    }
+   ]
+  },
+  {
+   "defName": "Gun_ChargeBlasterHeavy",
+   "label": "heavy charge blaster",
+   "source": "Core",
+   "techLevel": "Spacer",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsRanged"
+   ],
+   "weaponTags": [
+    "MechanoidGunHeavy",
+    "ChargeBlasterHeavyGun"
+   ],
+   "weaponClasses": [
+    "Ranged",
+    "RangedHeavy"
+   ],
+   "mechOnly": true,
+   "mass": 22,
+   "marketValue": 1400,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 1.25,
+    "range": 26.9,
+    "burstShotCount": 24,
+    "ticksBetweenBurstShots": 5,
+    "projectile": {
+     "defName": "Bullet_ChargeBlasterHeavy",
+     "label": "charge blaster shot",
+     "damageDef": "Bullet",
+     "damage": 15,
+     "speed": 90
+    },
+    "cooldown": 7.4,
+    "accuracy": {
+     "touch": 0.18,
+     "short": 0.26,
+     "medium": 0.26,
+     "long": 0.18
+    }
+   },
+   "tools": [
+    {
+     "label": "barrel",
+     "capacities": [
+      "Blunt"
+     ],
+     "damageDefs": [
+      "Blunt"
+     ],
+     "power": 11.7,
+     "cooldownTime": 2.6
+    }
+   ]
+  },
+  {
+   "defName": "Gun_HeavySMG",
+   "label": "heavy SMG",
+   "source": "Core",
+   "techLevel": "Industrial",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsRanged"
+   ],
+   "weaponTags": [
+    "Gun",
+    "IndustrialGunAdvanced",
+    "ShortShots"
+   ],
+   "weaponClasses": [
+    "Ranged",
+    "ShortShots",
+    "RangedHeavy"
+   ],
+   "hasQuality": true,
+   "costList": {
+    "Steel": 75,
+    "ComponentIndustrial": 4
+   },
+   "researchPrerequisite": "GasOperation",
+   "mass": 3.5,
+   "workToMake": 24000,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 0.9,
+    "range": 22.9,
+    "burstShotCount": 3,
+    "ticksBetweenBurstShots": 11,
+    "projectile": {
+     "defName": "Bullet_HeavySMG",
+     "label": "heavy SMG bullet",
+     "damageDef": "Bullet",
+     "damage": 12,
+     "speed": 48
+    },
+    "cooldown": 1.65,
+    "accuracy": {
+     "touch": 0.85,
+     "short": 0.65,
+     "medium": 0.35,
+     "long": 0.2
+    }
+   },
+   "tools": [
+    {
+     "label": "grip",
+     "capacities": [
+      "Blunt"
+     ],
+     "damageDefs": [
+      "Blunt"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    },
+    {
+     "label": "barrel",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    }
+   ]
+  },
+  {
+   "defName": "Gun_HellsphereCannon",
+   "label": "hellsphere cannon",
+   "source": "Biotech",
+   "techLevel": "Spacer",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsRanged"
+   ],
+   "weaponTags": [
+    "HellsphereCannonGun"
+   ],
+   "weaponClasses": [
+    "Ranged"
+   ],
+   "mechOnly": true,
+   "mass": 20,
+   "marketValue": 1400,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 7.5,
+    "range": 18.9,
+    "minRange": 5.9,
+    "burstShotCount": 1,
+    "ticksBetweenBurstShots": 15,
+    "projectile": {
+     "defName": "Bullet_HellsphereCannonGun",
+     "label": "hellsphere cannon shot",
+     "damageDef": "Vaporize",
+     "speed": 75,
+     "explosionRadius": 4.9
+    },
+    "cooldown": 6,
+    "accuracy": {
+     "touch": 1,
+     "short": 1,
+     "medium": 1,
+     "long": 1
+    }
+   },
+   "tools": [
+    {
+     "label": "barrel",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2.6
+    }
+   ]
+  },
+  {
+   "defName": "MeleeWeapon_Ikwa",
+   "label": "ikwa",
+   "source": "Core",
+   "techLevel": "Neolithic",
+   "kind": "melee",
+   "categories": [
+    "WeaponsMelee"
+   ],
+   "weaponTags": [
+    "NeolithicMeleeDecent"
+   ],
+   "weaponClasses": [
+    "Melee",
+    "MeleePiercer",
+    "Neolithic"
+   ],
+   "hasQuality": true,
+   "stuffCategories": [
+    "Metallic",
+    "Woody"
+   ],
+   "costStuffCount": 50,
+   "researchPrerequisite": "Smithing",
+   "mass": 1.1,
+   "workToMake": 5000,
+   "maxHitPoints": 100,
+   "tools": [
+    {
+     "label": "handle",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    },
+    {
+     "label": "head",
+     "capacities": [
+      "Stab"
+     ],
+     "damageDefs": [
+      "Stab"
+     ],
+     "power": 15,
+     "cooldownTime": 2
+    },
+    {
+     "label": "edge",
+     "capacities": [
+      "Cut"
+     ],
+     "damageDefs": [
+      "Cut"
+     ],
+     "power": 15,
+     "cooldownTime": 2
+    }
+   ]
+  },
+  {
+   "defName": "Gun_IncendiaryLauncher",
+   "label": "incendiary launcher",
+   "source": "Core",
+   "techLevel": "Industrial",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsRanged"
+   ],
+   "weaponTags": [
+    "Gun"
+   ],
+   "weaponClasses": [
+    "Ranged",
+    "RangedHeavy"
+   ],
+   "hasQuality": true,
+   "costList": {
+    "Steel": 75,
+    "ComponentIndustrial": 4
+   },
+   "researchPrerequisite": "Gunsmithing",
+   "mass": 3.4,
+   "workToMake": 20000,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 3.5,
+    "range": 23.9,
+    "burstShotCount": 1,
+    "ticksBetweenBurstShots": 15,
+    "forcedMissRadius": 1.9,
+    "projectile": {
+     "defName": "Bullet_IncendiaryLauncher",
+     "label": "incendiary bolt",
+     "damageDef": "Flame",
+     "speed": 40,
+     "explosionRadius": 1.1
+    },
+    "cooldown": 3.5,
+    "accuracy": {
+     "touch": 1,
+     "short": 1,
+     "medium": 1,
+     "long": 1
+    }
+   },
+   "tools": [
+    {
+     "label": "stock",
+     "capacities": [
+      "Blunt"
+     ],
+     "damageDefs": [
+      "Blunt"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    },
+    {
+     "label": "barrel",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    }
+   ]
+  },
+  {
+   "defName": "Gun_InfernoCannonTurret",
+   "label": "inferno cannon",
+   "source": "Core",
+   "techLevel": "Spacer",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsRanged"
+   ],
+   "weaponTags": [
+    "TurretGun"
+   ],
+   "weaponClasses": [
+    "Ranged",
+    "RangedHeavy"
+   ],
+   "mechOnly": true,
+   "mass": 18,
+   "marketValue": 1400,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 1.25,
+    "range": 45.9,
+    "minRange": 3.9,
+    "burstShotCount": 1,
+    "ticksBetweenBurstShots": 15,
+    "forcedMissRadius": 4.6,
+    "projectile": {
+     "defName": "Bullet_InfernoCannon",
+     "label": "inferno cannon shell",
+     "damageDef": "Flame",
+     "speed": 45,
+     "explosionRadius": 2.4
+    },
+    "cooldown": 8.4,
+    "accuracy": {
+     "touch": 1,
+     "short": 1,
+     "medium": 1,
+     "long": 0.66
+    }
+   },
+   "tools": [
+    {
+     "label": "barrel",
+     "capacities": [
+      "Blunt"
+     ],
+     "damageDefs": [
+      "Blunt"
+     ],
+     "power": 11.7,
+     "cooldownTime": 2.6
+    }
+   ]
+  },
+  {
+   "defName": "Gun_InfernoCannon",
+   "label": "inferno cannon",
+   "source": "Core",
+   "techLevel": "Spacer",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsRanged"
+   ],
+   "weaponTags": [
+    "MechanoidGunHeavy",
+    "InfernoCannonGun"
+   ],
+   "weaponClasses": [
+    "Ranged",
+    "RangedHeavy"
+   ],
+   "mechOnly": true,
+   "mass": 18,
+   "marketValue": 1400,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 1.25,
+    "range": 26.9,
+    "burstShotCount": 1,
+    "ticksBetweenBurstShots": 15,
+    "forcedMissRadius": 3.5,
+    "projectile": {
+     "defName": "Bullet_InfernoCannon",
+     "label": "inferno cannon shell",
+     "damageDef": "Flame",
+     "speed": 45,
+     "explosionRadius": 2.4
+    },
+    "cooldown": 8.4,
+    "accuracy": {
+     "touch": 1,
+     "short": 1,
+     "medium": 1,
+     "long": 1
+    }
+   },
+   "tools": [
+    {
+     "label": "barrel",
+     "capacities": [
+      "Blunt"
+     ],
+     "damageDefs": [
+      "Blunt"
+     ],
+     "power": 11.7,
+     "cooldownTime": 2.6
+    }
+   ]
+  },
+  {
+   "defName": "MeleeWeapon_Knife",
+   "label": "knife",
+   "source": "Core",
+   "techLevel": "Neolithic",
+   "kind": "melee",
+   "categories": [
+    "WeaponsMelee"
+   ],
+   "weaponTags": [
+    "MedievalMeleeBasic",
+    "NeolithicMeleeBasic"
+   ],
+   "weaponClasses": [
+    "Melee",
+    "MeleePiercer",
+    "Neolithic"
+   ],
+   "hasQuality": true,
+   "stuffCategories": [
+    "Metallic"
+   ],
+   "costStuffCount": 30,
+   "mass": 0.5,
+   "workToMake": 1800,
+   "maxHitPoints": 100,
+   "tools": [
+    {
+     "label": "handle",
+     "capacities": [
+      "Blunt"
+     ],
+     "damageDefs": [
+      "Blunt"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    },
+    {
+     "label": "blade",
+     "capacities": [
+      "Cut"
+     ],
+     "damageDefs": [
+      "Cut"
+     ],
+     "power": 12,
+     "cooldownTime": 1.5
+    },
+    {
+     "label": "point",
+     "capacities": [
+      "Stab"
+     ],
+     "damageDefs": [
+      "Stab"
+     ],
+     "power": 13,
+     "cooldownTime": 2
+    }
+   ]
+  },
+  {
+   "defName": "Gun_ChargeBlasterHeavyTurret",
+   "label": "light charge blaster",
+   "source": "Core",
+   "techLevel": "Spacer",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsRanged"
+   ],
+   "weaponClasses": [
+    "Ranged",
+    "RangedHeavy"
+   ],
+   "mechOnly": true,
+   "mass": 22,
+   "marketValue": 1400,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 1.25,
+    "range": 45.9,
+    "minRange": 3.9,
+    "burstShotCount": 9,
+    "ticksBetweenBurstShots": 7,
+    "projectile": {
+     "defName": "Bullet_ChargeBlasterHeavy",
+     "label": "charge blaster shot",
+     "damageDef": "Bullet",
+     "damage": 15,
+     "speed": 90
+    },
+    "cooldown": 7.4,
+    "accuracy": {
+     "touch": 0.18,
+     "short": 0.26,
+     "medium": 0.26,
+     "long": 0.08
+    }
+   },
+   "tools": [
+    {
+     "label": "barrel",
+     "capacities": [
+      "Blunt"
+     ],
+     "damageDefs": [
+      "Blunt"
+     ],
+     "power": 11.7,
+     "cooldownTime": 2.6
+    }
+   ]
+  },
+  {
+   "defName": "Gun_LMG",
+   "label": "LMG",
+   "source": "Core",
+   "techLevel": "Industrial",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsRanged"
+   ],
+   "weaponTags": [
+    "Gun",
+    "IndustrialGunAdvanced"
+   ],
+   "weaponClasses": [
+    "Ranged",
+    "RangedHeavy"
+   ],
+   "hasQuality": true,
+   "costList": {
+    "Steel": 75,
+    "ComponentIndustrial": 5
+   },
+   "researchPrerequisite": "GasOperation",
+   "mass": 8.5,
+   "workToMake": 34000,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 1.8,
+    "range": 25.9,
+    "burstShotCount": 6,
+    "ticksBetweenBurstShots": 7,
+    "projectile": {
+     "defName": "Bullet_LMG",
+     "label": "LMG bullet",
+     "damageDef": "Bullet",
+     "damage": 12,
+     "stoppingPower": 1,
+     "speed": 46
+    },
+    "cooldown": 1.6,
+    "accuracy": {
+     "touch": 0.4,
+     "short": 0.48,
+     "medium": 0.35,
+     "long": 0.26
+    }
+   },
+   "tools": [
+    {
+     "label": "stock",
+     "capacities": [
+      "Blunt"
+     ],
+     "damageDefs": [
+      "Blunt"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    },
+    {
+     "label": "barrel",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    }
+   ]
+  },
+  {
+   "defName": "MeleeWeapon_LongSword",
+   "label": "longsword",
+   "source": "Core",
+   "techLevel": "Medieval",
+   "kind": "melee",
+   "categories": [
+    "WeaponsMelee"
+   ],
+   "weaponTags": [
+    "MedievalMeleeAdvanced",
+    "LongSword"
+   ],
+   "weaponClasses": [
+    "Melee",
+    "MeleePiercer"
+   ],
+   "hasQuality": true,
+   "stuffCategories": [
+    "Metallic",
+    "Woody"
+   ],
+   "costStuffCount": 100,
+   "researchPrerequisite": "LongBlades",
+   "mass": 2,
+   "workToMake": 18000,
+   "maxHitPoints": 100,
+   "tools": [
+    {
+     "label": "handle",
+     "capacities": [
+      "Blunt"
+     ],
+     "damageDefs": [
+      "Blunt"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    },
+    {
+     "label": "point",
+     "capacities": [
+      "Stab"
+     ],
+     "damageDefs": [
+      "Stab"
+     ],
+     "power": 23,
+     "cooldownTime": 2.6
+    },
+    {
+     "label": "edge",
+     "capacities": [
+      "Cut"
+     ],
+     "damageDefs": [
+      "Cut"
+     ],
+     "power": 23,
+     "cooldownTime": 2.6
+    }
+   ]
+  },
+  {
+   "defName": "MeleeWeapon_Mace",
+   "label": "mace",
+   "source": "Core",
+   "techLevel": "Medieval",
+   "kind": "melee",
+   "categories": [
+    "WeaponsMelee"
+   ],
+   "weaponTags": [
+    "MedievalMeleeDecent"
+   ],
+   "weaponClasses": [
+    "MeleeBlunt",
+    "Melee"
+   ],
+   "hasQuality": true,
+   "stuffCategories": [
+    "Metallic",
+    "Woody"
+   ],
+   "costStuffCount": 50,
+   "researchPrerequisite": "Smithing",
+   "mass": 1.25,
+   "workToMake": 6000,
+   "maxHitPoints": 100,
+   "tools": [
+    {
+     "label": "handle",
+     "capacities": [
+      "Poke"
+     ],
+     "damageDefs": [
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    },
+    {
+     "label": "head",
+     "capacities": [
+      "Blunt"
+     ],
+     "damageDefs": [
+      "Blunt"
+     ],
+     "power": 15.7,
+     "cooldownTime": 2
+    }
+   ]
+  },
+  {
+   "defName": "Gun_MachinePistol",
+   "label": "machine pistol",
+   "source": "Core",
+   "techLevel": "Industrial",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsRanged"
+   ],
+   "weaponTags": [
+    "Gun",
+    "ShortShots"
+   ],
+   "weaponClasses": [
+    "Ranged",
+    "RangedLight",
+    "ShortShots"
+   ],
+   "hasQuality": true,
+   "costList": {
+    "Steel": 45,
+    "ComponentIndustrial": 3
+   },
+   "researchPrerequisite": "BlowbackOperation",
+   "mass": 2.5,
+   "workToMake": 11000,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 0.5,
+    "range": 19.9,
+    "burstShotCount": 3,
+    "ticksBetweenBurstShots": 7,
+    "projectile": {
+     "defName": "Bullet_MachinePistol",
+     "label": "machine pistol bullet",
+     "damageDef": "Bullet",
+     "damage": 6,
+     "speed": 55
+    },
+    "cooldown": 0.9,
+    "accuracy": {
+     "touch": 0.9,
+     "short": 0.65,
+     "medium": 0.35,
+     "long": 0.15
+    }
+   },
+   "tools": [
+    {
+     "label": "grip",
+     "capacities": [
+      "Blunt"
+     ],
+     "damageDefs": [
+      "Blunt"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    },
+    {
+     "label": "barrel",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    }
+   ]
+  },
+  {
+   "defName": "MastodonTusk",
+   "label": "mastodon tusk",
+   "source": "Odyssey",
+   "techLevel": "Neolithic",
+   "kind": "melee",
+   "categories": [
+    "ItemsMisc"
+   ],
+   "weaponClasses": [
+    "Melee",
+    "MeleePiercer"
+   ],
+   "improvised": 2,
+   "mass": 2.2,
+   "marketValue": 120,
+   "maxHitPoints": 200,
+   "tools": [
+    {
+     "label": "point",
+     "capacities": [
+      "Scratch",
+      "Stab"
+     ],
+     "damageDefs": [
+      "Scratch",
+      "Stab"
+     ],
+     "power": 20,
+     "cooldownTime": 2.8
+    },
+    {
+     "label": "base",
+     "capacities": [
+      "Blunt"
+     ],
+     "damageDefs": [
+      "Blunt"
+     ],
+     "power": 10,
+     "cooldownTime": 2.2,
+     "chanceFactor": 0.5
+    }
+   ]
+  },
+  {
+   "defName": "Gun_MiniFlameblaster",
+   "label": "mini-flameblaster",
+   "source": "Biotech",
+   "techLevel": "Industrial",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsRanged"
+   ],
+   "weaponTags": [
+    "MechanoidGunMiniFlameblaster"
+   ],
+   "weaponClasses": [
+    "Ranged",
+    "Ranged"
+   ],
+   "mechOnly": true,
+   "mass": 1.5,
+   "marketValue": 1000,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_SpewFire",
+    "warmupTime": 0,
+    "range": 4.9,
+    "burstShotCount": 10,
+    "ticksBetweenBurstShots": 4,
+    "cooldown": 4,
+    "accuracy": {
+     "touch": 0.4,
+     "short": 0.48,
+     "medium": 0.35,
+     "long": 0.26
+    }
+   },
+   "tools": [
+    {
+     "label": "barrel",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2.6
+    }
+   ]
+  },
+  {
+   "defName": "Gun_MiniShotgun",
+   "label": "mini-shotgun",
+   "source": "Biotech",
+   "techLevel": "Spacer",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsRanged"
+   ],
+   "weaponTags": [
+    "MechanoidGunShortRange"
+   ],
+   "weaponClasses": [
+    "Ranged",
+    "Ranged"
+   ],
+   "mechOnly": true,
+   "mass": 1.5,
+   "marketValue": 1000,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 1.2,
+    "range": 12.9,
+    "burstShotCount": 1,
+    "ticksBetweenBurstShots": 10,
+    "projectile": {
+     "defName": "Bullet_MiniShotgun",
+     "label": "shotgun blast",
+     "damageDef": "Bullet",
+     "damage": 10,
+     "armorPenetration": 0.12,
+     "stoppingPower": 2.5,
+     "speed": 55
+    },
+    "cooldown": 1.7,
+    "accuracy": {
+     "touch": 0.8,
+     "short": 0.87,
+     "medium": 0.7,
+     "long": 0.55
+    }
+   },
+   "tools": [
+    {
+     "label": "barrel",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2.6
+    }
+   ]
+  },
+  {
+   "defName": "Gun_Minigun",
+   "label": "minigun",
+   "source": "Core",
+   "techLevel": "Industrial",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsRanged"
+   ],
+   "weaponTags": [
+    "Gun",
+    "GunHeavy",
+    "Minigun"
+   ],
+   "weaponClasses": [
+    "Ranged",
+    "RangedHeavy"
+   ],
+   "hasQuality": true,
+   "costList": {
+    "Steel": 160,
+    "ComponentIndustrial": 20
+   },
+   "researchPrerequisite": "MultibarrelWeapons",
+   "mass": 10,
+   "workToMake": 60000,
+   "maxHitPoints": 100,
+   "equippedStatOffsets": {
+    "MoveSpeed": -0.25
+   },
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 2.5,
+    "range": 30.9,
+    "burstShotCount": 25,
+    "ticksBetweenBurstShots": 5,
+    "projectile": {
+     "defName": "Bullet_Minigun",
+     "label": "minigun bullet",
+     "damageDef": "Bullet",
+     "damage": 10,
+     "speed": 70
+    },
+    "cooldown": 1.5,
+    "accuracy": {
+     "touch": 0.2,
+     "short": 0.25,
+     "medium": 0.25,
+     "long": 0.18
+    }
+   },
+   "tools": [
+    {
+     "label": "barrels",
+     "capacities": [
+      "Blunt"
+     ],
+     "damageDefs": [
+      "Blunt"
+     ],
+     "power": 11.7,
+     "cooldownTime": 2.6
+    }
+   ]
+  },
+  {
+   "defName": "Weapon_GrenadeMolotov",
+   "label": "molotov cocktails",
+   "source": "Core",
+   "techLevel": "Industrial",
+   "kind": "ranged",
+   "categories": [
+    "Grenades"
+   ],
+   "weaponTags": [
+    "GrenadeDestructive",
+    "GrenadeFlame"
+   ],
+   "weaponClasses": [
+    "Ranged"
+   ],
+   "costList": {
+    "Cloth": 25,
+    "Chemfuel": 80
+   },
+   "researchPrerequisite": "Machining",
+   "mass": 1,
+   "workToMake": 6000,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_LaunchProjectile",
+    "warmupTime": 1.5,
+    "range": 12.9,
+    "burstShotCount": 1,
+    "ticksBetweenBurstShots": 15,
+    "forcedMissRadius": 1.9,
+    "projectile": {
+     "defName": "Proj_GrenadeMolotov",
+     "label": "molotov cocktail",
+     "damageDef": "Flame",
+     "speed": 12,
+     "explosionRadius": 1.1
+    },
+    "cooldown": 2.66,
+    "accuracy": {
+     "touch": 1,
+     "short": 1,
+     "medium": 1,
+     "long": 1
+    }
+   }
+  },
+  {
+   "defName": "Gun_Needle",
+   "label": "needle gun",
+   "source": "Core",
+   "techLevel": "Spacer",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsRanged"
+   ],
+   "weaponTags": [
+    "MechanoidGunLongRange"
+   ],
+   "weaponClasses": [
+    "Ranged",
+    "RangedHeavy",
+    "LongShots"
+   ],
+   "mechOnly": true,
+   "mass": 2.6,
+   "marketValue": 1400,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 2.5,
+    "range": 44.9,
+    "burstShotCount": 1,
+    "ticksBetweenBurstShots": 15,
+    "projectile": {
+     "defName": "Bullet_NeedleGun",
+     "label": "needle shot",
+     "damageDef": "Bullet",
+     "damage": 15,
+     "armorPenetration": 0.35,
+     "stoppingPower": 1.5,
+     "speed": 90
+    },
+    "cooldown": 2.1,
+    "accuracy": {
+     "touch": 0.6,
+     "short": 0.8,
+     "medium": 0.9,
+     "long": 0.85
+    }
+   },
+   "tools": [
+    {
+     "label": "barrel",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2.6
+    }
+   ]
+  },
+  {
+   "defName": "Gun_NeedleLauncher",
+   "label": "needle launcher",
+   "source": "Biotech",
+   "techLevel": "Spacer",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsRanged"
+   ],
+   "weaponTags": [
+    "MechanoidGunNeedleLauncher"
+   ],
+   "weaponClasses": [
+    "Ranged",
+    "RangedHeavy",
+    "LongShots"
+   ],
+   "mechOnly": true,
+   "mass": 2.6,
+   "marketValue": 1400,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 2.5,
+    "range": 24.9,
+    "burstShotCount": 1,
+    "ticksBetweenBurstShots": 15,
+    "projectile": {
+     "defName": "Bullet_NeedleGun",
+     "label": "needle shot",
+     "damageDef": "Bullet",
+     "damage": 15,
+     "armorPenetration": 0.35,
+     "stoppingPower": 1.5,
+     "speed": 90
+    },
+    "cooldown": 2.1,
+    "accuracy": {
+     "touch": 0.6,
+     "short": 0.8,
+     "medium": 0.9,
+     "long": 0.85
+    }
+   },
+   "tools": [
+    {
+     "label": "barrel",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2.6
+    }
+   ]
+  },
+  {
+   "defName": "Pila",
+   "label": "pila",
+   "source": "Core",
+   "techLevel": "Neolithic",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsRanged"
+   ],
+   "weaponTags": [
+    "Neolithic",
+    "NeolithicRangedHeavy",
+    "NoRelic"
+   ],
+   "weaponClasses": [
+    "Neolithic",
+    "Ranged"
+   ],
+   "hasQuality": true,
+   "costList": {
+    "WoodLog": 70
+   },
+   "mass": 4,
+   "workToMake": 7000,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 4,
+    "range": 18.9,
+    "burstShotCount": 1,
+    "ticksBetweenBurstShots": 15,
+    "projectile": {
+     "defName": "Pilum_Thrown",
+     "label": "pilum",
+     "damageDef": "RangedStab",
+     "damage": 25,
+     "armorPenetration": 0.1,
+     "stoppingPower": 2.5,
+     "speed": 26
+    },
+    "cooldown": 2.5,
+    "accuracy": {
+     "touch": 0.8,
+     "short": 0.71,
+     "medium": 0.5,
+     "long": 0.32
+    }
+   },
+   "tools": [
+    {
+     "label": "shaft",
+     "capacities": [
+      "Blunt"
+     ],
+     "damageDefs": [
+      "Blunt"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    },
+    {
+     "label": "point",
+     "capacities": [
+      "Stab"
+     ],
+     "damageDefs": [
+      "Stab"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    }
+   ]
+  },
+  {
+   "defName": "Gun_PumpShotgun",
+   "label": "pump shotgun",
+   "source": "Core",
+   "techLevel": "Industrial",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsRanged"
+   ],
+   "weaponTags": [
+    "Gun",
+    "ShortShots",
+    "PumpShotgun"
+   ],
+   "weaponClasses": [
+    "Ranged",
+    "ShortShots"
+   ],
+   "hasQuality": true,
+   "costList": {
+    "Steel": 60,
+    "ComponentIndustrial": 3
+   },
+   "researchPrerequisite": "Gunsmithing",
+   "mass": 3.4,
+   "workToMake": 12000,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 0.9,
+    "range": 15.9,
+    "burstShotCount": 1,
+    "ticksBetweenBurstShots": 15,
+    "projectile": {
+     "defName": "Bullet_Shotgun",
+     "label": "shotgun blast",
+     "damageDef": "Bullet",
+     "damage": 18,
+     "armorPenetration": 0.14,
+     "stoppingPower": 3,
+     "speed": 55
+    },
+    "cooldown": 1.25,
+    "accuracy": {
+     "touch": 0.8,
+     "short": 0.87,
+     "medium": 0.77,
+     "long": 0.64
+    }
+   },
+   "tools": [
+    {
+     "label": "stock",
+     "capacities": [
+      "Blunt"
+     ],
+     "damageDefs": [
+      "Blunt"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    },
+    {
+     "label": "barrel",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    }
+   ]
+  },
+  {
+   "defName": "Bow_Recurve",
+   "label": "recurve bow",
+   "source": "Core",
+   "techLevel": "Neolithic",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsRanged"
+   ],
+   "weaponTags": [
+    "Neolithic",
+    "NeolithicRangedDecent"
+   ],
+   "weaponClasses": [
+    "Neolithic",
+    "Ranged",
+    "RangedLight"
+   ],
+   "hasQuality": true,
+   "costList": {
+    "WoodLog": 40
+   },
+   "researchPrerequisite": "RecurveBow",
+   "mass": 1.3,
+   "workToMake": 5000,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 1.45,
+    "range": 25.9,
+    "burstShotCount": 1,
+    "ticksBetweenBurstShots": 15,
+    "projectile": {
+     "defName": "Arrow_Recurve",
+     "label": "recurve bow arrow",
+     "damageDef": "ArrowHighVelocity",
+     "damage": 14,
+     "stoppingPower": 1,
+     "speed": 56
+    },
+    "cooldown": 1.65,
+    "accuracy": {
+     "touch": 0.7,
+     "short": 0.78,
+     "medium": 0.65,
+     "long": 0.35
+    }
+   },
+   "tools": [
+    {
+     "label": "limb",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    }
+   ]
+  },
+  {
+   "defName": "Gun_Revolver",
+   "label": "revolver",
+   "source": "Core",
+   "techLevel": "Industrial",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsRanged"
+   ],
+   "weaponTags": [
+    "Gun",
+    "SimpleGun",
+    "Revolver"
+   ],
+   "weaponClasses": [
+    "Ranged",
+    "RangedLight"
+   ],
+   "hasQuality": true,
+   "costList": {
+    "Steel": 30,
+    "ComponentIndustrial": 2
+   },
+   "researchPrerequisite": "Gunsmithing",
+   "mass": 1.4,
+   "workToMake": 4000,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 0.3,
+    "range": 25.9,
+    "burstShotCount": 1,
+    "ticksBetweenBurstShots": 15,
+    "projectile": {
+     "defName": "Bullet_Revolver",
+     "label": "revolver bullet",
+     "damageDef": "Bullet",
+     "damage": 12,
+     "stoppingPower": 1,
+     "speed": 55
+    },
+    "cooldown": 1.6,
+    "accuracy": {
+     "touch": 0.8,
+     "short": 0.75,
+     "medium": 0.55,
+     "long": 0.4
+    }
+   },
+   "tools": [
+    {
+     "label": "grip",
+     "capacities": [
+      "Blunt"
+     ],
+     "damageDefs": [
+      "Blunt"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    },
+    {
+     "label": "barrel",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    }
+   ]
+  },
+  {
+   "defName": "Gun_Scattergun",
+   "label": "scattergun",
+   "source": "Odyssey",
+   "techLevel": "Spacer",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsRanged"
+   ],
+   "weaponTags": [
+    "SentryDroneGunShortRange"
+   ],
+   "weaponClasses": [
+    "Ranged",
+    "Ranged"
+   ],
+   "mechOnly": true,
+   "mass": 1.5,
+   "marketValue": 1000,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 0.55,
+    "range": 19.9,
+    "burstShotCount": 1,
+    "ticksBetweenBurstShots": 10,
+    "projectile": {
+     "defName": "Bullet_Scattergun",
+     "label": "scattergun blast",
+     "damageDef": "Bullet",
+     "damage": 13,
+     "armorPenetration": 0.15,
+     "stoppingPower": 2.5,
+     "speed": 55
+    },
+    "cooldown": 2,
+    "accuracy": {
+     "touch": 0.8,
+     "short": 0.87,
+     "medium": 0.72,
+     "long": 0.6
+    }
+   },
+   "tools": [
+    {
+     "label": "barrel",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2.6
+    }
+   ]
+  },
+  {
+   "defName": "Bow_Short",
+   "label": "short bow",
+   "source": "Core",
+   "techLevel": "Neolithic",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsRanged"
+   ],
+   "weaponTags": [
+    "Neolithic",
+    "NeolithicRangedBasic"
+   ],
+   "weaponClasses": [
+    "Neolithic",
+    "Ranged",
+    "RangedLight"
+   ],
+   "hasQuality": true,
+   "costList": {
+    "WoodLog": 30
+   },
+   "mass": 0.8,
+   "workToMake": 2400,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 1.35,
+    "range": 22.9,
+    "burstShotCount": 1,
+    "ticksBetweenBurstShots": 15,
+    "projectile": {
+     "defName": "Arrow_Short",
+     "label": "shortbow arrow",
+     "damageDef": "Arrow",
+     "damage": 11,
+     "speed": 44
+    },
+    "cooldown": 1.65,
+    "accuracy": {
+     "touch": 0.75,
+     "short": 0.65,
+     "medium": 0.45,
+     "long": 0.25
+    }
+   },
+   "tools": [
+    {
+     "label": "limb",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    }
+   ]
+  },
+  {
+   "defName": "Gun_Slugthrower",
+   "label": "slugthrower",
+   "source": "Biotech",
+   "techLevel": "Industrial",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsRanged"
+   ],
+   "weaponTags": [
+    "MechanoidGunSlugthrower"
+   ],
+   "weaponClasses": [
+    "Ranged",
+    "Ranged"
+   ],
+   "mechOnly": true,
+   "mass": 1.5,
+   "marketValue": 1000,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 0.3,
+    "range": 19.9,
+    "burstShotCount": 1,
+    "ticksBetweenBurstShots": 8,
+    "projectile": {
+     "defName": "Bullet_Slugthrower",
+     "label": "slug",
+     "damageDef": "Bullet",
+     "damage": 12,
+     "speed": 70
+    },
+    "cooldown": 4,
+    "accuracy": {
+     "touch": 0.2,
+     "short": 0.3,
+     "medium": 0.4,
+     "long": 0.95
+    }
+   },
+   "tools": [
+    {
+     "label": "barrel",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2.6
+    },
+    {
+     "label": "barrel",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2.6
+    }
+   ]
+  },
+  {
+   "defName": "Gun_SmokeLauncher",
+   "label": "smoke launcher",
+   "source": "Core",
+   "techLevel": "Industrial",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsRanged"
+   ],
+   "weaponTags": [
+    "GrenadeSmoke"
+   ],
+   "weaponClasses": [
+    "Ranged",
+    "RangedHeavy"
+   ],
+   "costList": {
+    "Steel": 75,
+    "ComponentIndustrial": 4
+   },
+   "researchPrerequisite": "Gunsmithing",
+   "mass": 3.4,
+   "workToMake": 30000,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 3.5,
+    "range": 23.9,
+    "burstShotCount": 1,
+    "ticksBetweenBurstShots": 15,
+    "forcedMissRadius": 1.9,
+    "projectile": {
+     "defName": "Bullet_SmokeLauncher",
+     "label": "smoke launcher shell",
+     "damageDef": "Smoke",
+     "speed": 40,
+     "explosionRadius": 2.4
+    },
+    "cooldown": 4.5,
+    "accuracy": {
+     "touch": 1,
+     "short": 1,
+     "medium": 1,
+     "long": 1
+    }
+   },
+   "tools": [
+    {
+     "label": "stock",
+     "capacities": [
+      "Blunt"
+     ],
+     "damageDefs": [
+      "Blunt"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    },
+    {
+     "label": "barrel",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    }
+   ]
+  },
+  {
+   "defName": "Gun_SniperRifle",
+   "label": "sniper rifle",
+   "source": "Core",
+   "techLevel": "Industrial",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsRanged"
+   ],
+   "weaponTags": [
+    "SniperRifle"
+   ],
+   "weaponClasses": [
+    "Ranged",
+    "LongShots",
+    "RangedHeavy"
+   ],
+   "hasQuality": true,
+   "costList": {
+    "Steel": 60,
+    "ComponentIndustrial": 8
+   },
+   "researchPrerequisite": "PrecisionRifling",
+   "mass": 4,
+   "workToMake": 45000,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 3.5,
+    "range": 44.9,
+    "burstShotCount": 1,
+    "ticksBetweenBurstShots": 15,
+    "projectile": {
+     "defName": "Bullet_SniperRifle",
+     "label": "sniper rifle bullet",
+     "damageDef": "Bullet",
+     "damage": 25,
+     "stoppingPower": 1.5,
+     "speed": 100
+    },
+    "cooldown": 1.5,
+    "accuracy": {
+     "touch": 0.5,
+     "short": 0.7,
+     "medium": 0.88,
+     "long": 0.9
+    }
+   },
+   "tools": [
+    {
+     "label": "stock",
+     "capacities": [
+      "Blunt"
+     ],
+     "damageDefs": [
+      "Blunt"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    },
+    {
+     "label": "barrel",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    }
+   ]
+  },
+  {
+   "defName": "MeleeWeapon_Spear",
+   "label": "spear",
+   "source": "Core",
+   "techLevel": "Neolithic",
+   "kind": "melee",
+   "categories": [
+    "WeaponsMelee"
+   ],
+   "weaponTags": [
+    "NeolithicMeleeAdvanced",
+    "MedievalMeleeAdvanced",
+    "Spear"
+   ],
+   "weaponClasses": [
+    "Melee",
+    "MeleePiercer",
+    "Neolithic"
+   ],
+   "hasQuality": true,
+   "stuffCategories": [
+    "Metallic",
+    "Woody"
+   ],
+   "costStuffCount": 75,
+   "researchPrerequisite": "LongBlades",
+   "mass": 2,
+   "workToMake": 12000,
+   "maxHitPoints": 100,
+   "tools": [
+    {
+     "label": "shaft",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 13,
+     "cooldownTime": 2.6
+    },
+    {
+     "label": "point",
+     "capacities": [
+      "Stab"
+     ],
+     "damageDefs": [
+      "Stab"
+     ],
+     "power": 23,
+     "cooldownTime": 2.6,
+     "armorPenetration": 0.5
+    }
+   ]
+  },
+  {
+   "defName": "Gun_Spiner",
+   "label": "spiner",
+   "source": "Biotech",
+   "techLevel": "Industrial",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsRanged"
+   ],
+   "weaponTags": [
+    "MechanoidGunSpiner"
+   ],
+   "weaponClasses": [
+    "Ranged",
+    "Ranged"
+   ],
+   "mechOnly": true,
+   "mass": 1,
+   "marketValue": 500,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 0.3,
+    "range": 6.9,
+    "burstShotCount": 1,
+    "ticksBetweenBurstShots": 8,
+    "projectile": {
+     "defName": "Bullet_Spiner",
+     "label": "spine",
+     "damageDef": "Bullet",
+     "damage": 12,
+     "speed": 70
+    },
+    "cooldown": 1.8,
+    "accuracy": {
+     "touch": 0.2,
+     "short": 0.3,
+     "medium": 0.4,
+     "long": 0.95
+    }
+   },
+   "tools": [
+    {
+     "label": "barrel",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2.6
+    }
+   ]
+  },
+  {
+   "defName": "ThrumboHorn",
+   "label": "thrumbo horn",
+   "source": "Core",
+   "techLevel": "Neolithic",
+   "kind": "melee",
+   "categories": [
+    "ItemsMisc"
+   ],
+   "weaponClasses": [
+    "Melee",
+    "MeleePiercer"
+   ],
+   "improvised": 2,
+   "mass": 3,
+   "marketValue": 800,
+   "maxHitPoints": 150,
+   "tools": [
+    {
+     "label": "point",
+     "capacities": [
+      "Scratch",
+      "Stab"
+     ],
+     "damageDefs": [
+      "Scratch",
+      "Stab"
+     ],
+     "power": 28,
+     "cooldownTime": 2.6
+    },
+    {
+     "label": "base",
+     "capacities": [
+      "Blunt"
+     ],
+     "damageDefs": [
+      "Blunt"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    }
+   ]
+  },
+  {
+   "defName": "Gun_ThumpCannon",
+   "label": "thump cannon",
+   "source": "Core",
+   "techLevel": "Spacer",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsRanged"
+   ],
+   "weaponTags": [
+    "MechanoidGunBreach"
+   ],
+   "weaponClasses": [
+    "Ranged"
+   ],
+   "mechOnly": true,
+   "mass": 20,
+   "marketValue": 1400,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 1,
+    "range": 24.9,
+    "burstShotCount": 1,
+    "ticksBetweenBurstShots": 15,
+    "forcedMissRadius": 1.9,
+    "projectile": {
+     "defName": "Bullet_ThumpCannon",
+     "label": "thump bomb",
+     "damageDef": "Thump",
+     "damage": 9,
+     "stoppingPower": 3,
+     "speed": 50,
+     "explosionRadius": 1.9
+    },
+    "cooldown": 4,
+    "accuracy": {
+     "touch": 0.8,
+     "short": 0.87,
+     "medium": 0.77,
+     "long": 0.64
+    }
+   },
+   "tools": [
+    {
+     "label": "barrel",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2.6
+    }
+   ]
+  },
+  {
+   "defName": "Weapon_GrenadeTox",
+   "label": "tox grenades",
+   "source": "Biotech",
+   "techLevel": "Industrial",
+   "kind": "ranged",
+   "categories": [
+    "Grenades"
+   ],
+   "weaponTags": [
+    "GrenadeTox"
+   ],
+   "weaponClasses": [
+    "Ranged"
+   ],
+   "costList": {
+    "Steel": 20,
+    "ComponentIndustrial": 6
+   },
+   "researchPrerequisite": "ToxGas",
+   "mass": 1,
+   "workToMake": 24000,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_LaunchProjectile",
+    "warmupTime": 1.5,
+    "range": 12.9,
+    "burstShotCount": 1,
+    "ticksBetweenBurstShots": 15,
+    "forcedMissRadius": 1.9,
+    "projectile": {
+     "defName": "Proj_GrenadeTox",
+     "label": "tox grenade",
+     "damageDef": "ToxGas",
+     "speed": 12,
+     "explosionRadius": 1.9,
+     "explosionDelay": 100
+    },
+    "cooldown": 2.66,
+    "accuracy": {
+     "touch": 1,
+     "short": 1,
+     "medium": 1,
+     "long": 1
+    }
+   }
+  },
+  {
+   "defName": "Gun_ToxbombLauncher",
+   "label": "toxbomb launcher",
+   "source": "Biotech",
+   "techLevel": "Industrial",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsRanged"
+   ],
+   "weaponTags": [
+    "HeavyTox"
+   ],
+   "weaponClasses": [
+    "Ranged",
+    "RangedHeavy"
+   ],
+   "hasQuality": true,
+   "costList": {
+    "Steel": 75,
+    "ComponentIndustrial": 4
+   },
+   "researchPrerequisite": "ToxGas",
+   "mass": 3.4,
+   "workToMake": 30000,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 3.5,
+    "range": 23.9,
+    "burstShotCount": 1,
+    "ticksBetweenBurstShots": 15,
+    "forcedMissRadius": 1.9,
+    "projectile": {
+     "defName": "Bullet_ToxbombLauncher",
+     "label": "toxbomb launcher shell",
+     "damageDef": "ToxGas",
+     "speed": 40,
+     "explosionRadius": 1.9
+    },
+    "cooldown": 4.5,
+    "accuracy": {
+     "touch": 1,
+     "short": 1,
+     "medium": 1,
+     "long": 1
+    }
+   },
+   "tools": [
+    {
+     "label": "stock",
+     "capacities": [
+      "Blunt"
+     ],
+     "damageDefs": [
+      "Blunt"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    },
+    {
+     "label": "barrel",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    }
+   ]
+  },
+  {
+   "defName": "Gun_ToxicNeedle",
+   "label": "toxic needle gun",
+   "source": "Biotech",
+   "techLevel": "Spacer",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsRanged"
+   ],
+   "weaponTags": [
+    "MechanoidGunToxicNeedle"
+   ],
+   "weaponClasses": [
+    "Ranged",
+    "RangedHeavy",
+    "LongShots"
+   ],
+   "mechOnly": true,
+   "mass": 2.6,
+   "marketValue": 1400,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 2.35,
+    "range": 44.9,
+    "burstShotCount": 1,
+    "ticksBetweenBurstShots": 15,
+    "projectile": {
+     "defName": "Bullet_ToxicNeedleGun",
+     "label": "toxic needle",
+     "damageDef": "BulletToxic",
+     "damage": 25,
+     "armorPenetration": 0.35,
+     "stoppingPower": 1.5,
+     "speed": 90
+    },
+    "cooldown": 2.1,
+    "accuracy": {
+     "touch": 0.6,
+     "short": 0.8,
+     "medium": 0.9,
+     "long": 0.92
+    }
+   },
+   "tools": [
+    {
+     "label": "barrel",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2.6
+    }
+   ]
+  },
+  {
+   "defName": "Gun_TripleRocket",
+   "label": "triple rocket launcher",
+   "source": "Core",
+   "techLevel": "Spacer",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsRanged"
+   ],
+   "weaponTags": [
+    "Gun",
+    "GunSingleUse"
+   ],
+   "weaponClasses": [
+    "Ranged",
+    "RangedHeavy"
+   ],
+   "singleUse": true,
+   "mass": 7,
+   "marketValue": 1000,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_ShootOneUse",
+    "warmupTime": 4.5,
+    "range": 35.9,
+    "burstShotCount": 3,
+    "ticksBetweenBurstShots": 20,
+    "forcedMissRadius": 2.9,
+    "projectile": {
+     "defName": "Bullet_Rocket",
+     "label": "rocket",
+     "damageDef": "Bomb",
+     "speed": 50,
+     "explosionRadius": 3.9
+    },
+    "cooldown": 4.5,
+    "accuracy": {
+     "touch": 1,
+     "short": 1,
+     "medium": 1,
+     "long": 1
+    }
+   },
+   "tools": [
+    {
+     "label": "barrel",
+     "capacities": [
+      "Blunt"
+     ],
+     "damageDefs": [
+      "Blunt"
+     ],
+     "power": 11.7,
+     "cooldownTime": 2.6
+    }
+   ]
+  },
+  {
+   "defName": "Gun_AssaultRifle_Unique",
+   "label": "unique assault rifle",
+   "source": "Odyssey",
+   "techLevel": "Industrial",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsUnique"
+   ],
+   "weaponTags": [
+    "Gun",
+    "IndustrialGunAdvanced",
+    "AssaultRifle"
+   ],
+   "weaponClasses": [
+    "Ranged"
+   ],
+   "unique": true,
+   "uniqueCategories": [
+    "Ranged",
+    "BulletFiring",
+    "Gun",
+    "Sighted",
+    "Rifle",
+    "BurstFire",
+    "LowStoppingPower",
+    "Attachable"
+   ],
+   "hasQuality": true,
+   "costList": {
+    "Steel": 60,
+    "ComponentIndustrial": 7
+   },
+   "mass": 3.5,
+   "workToMake": 40000,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 1,
+    "range": 30.9,
+    "burstShotCount": 3,
+    "ticksBetweenBurstShots": 10,
+    "projectile": {
+     "defName": "Bullet_AssaultRifle",
+     "label": "assault rifle bullet",
+     "damageDef": "Bullet",
+     "damage": 11,
+     "speed": 70
+    },
+    "cooldown": 1.7,
+    "accuracy": {
+     "touch": 0.6,
+     "short": 0.7,
+     "medium": 0.65,
+     "long": 0.55
+    }
+   },
+   "tools": [
+    {
+     "label": "stock",
+     "capacities": [
+      "Blunt"
+     ],
+     "damageDefs": [
+      "Blunt"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    },
+    {
+     "label": "barrel",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    }
+   ]
+  },
+  {
+   "defName": "Gun_BeamRepeater_Unique",
+   "label": "unique beam repeater",
+   "source": "Odyssey",
+   "techLevel": "Spacer",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsUnique"
+   ],
+   "weaponTags": [
+    "Gun",
+    "GunHeavy",
+    "WeaponBeamRepeater"
+   ],
+   "weaponClasses": [
+    "Ranged",
+    "RangedHeavy",
+    "Ultratech"
+   ],
+   "unique": true,
+   "uniqueCategories": [
+    "Ranged",
+    "Gun",
+    "BurstFire",
+    "BeamWeapon"
+   ],
+   "hasQuality": true,
+   "costList": {
+    "Plasteel": 40,
+    "Steel": 30,
+    "ComponentSpacer": 3
+   },
+   "mass": 10,
+   "workToMake": 60000,
+   "maxHitPoints": 100,
+   "equippedStatOffsets": {
+    "MoveSpeed": -0.25
+   },
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 4,
+    "range": 21.9,
+    "burstShotCount": 30,
+    "ticksBetweenBurstShots": 10,
+    "projectile": {
+     "defName": "Bullet_BeamRepeater",
+     "label": "beam repeater laser",
+     "damageDef": "BeamBypassShields",
+     "damage": 5,
+     "armorPenetration": 0.5
+    },
+    "cooldown": 3,
+    "accuracy": {
+     "touch": 0.65,
+     "short": 0.72,
+     "medium": 0.65,
+     "long": 0.6
+    }
+   },
+   "tools": [
+    {
+     "label": "barrels",
+     "capacities": [
+      "Blunt"
+     ],
+     "damageDefs": [
+      "Blunt"
+     ],
+     "power": 11.7,
+     "cooldownTime": 2.6
+    }
+   ]
+  },
+  {
+   "defName": "Gun_BoltActionRifle_Unique",
+   "label": "unique bolt-action rifle",
+   "source": "Odyssey",
+   "techLevel": "Industrial",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsUnique"
+   ],
+   "weaponTags": [
+    "Gun"
+   ],
+   "weaponClasses": [
+    "Ranged",
+    "LongShots"
+   ],
+   "unique": true,
+   "uniqueCategories": [
+    "Ranged",
+    "BulletFiring",
+    "Gun",
+    "Rifle",
+    "Sighted"
+   ],
+   "hasQuality": true,
+   "costList": {
+    "Steel": 60,
+    "ComponentIndustrial": 3
+   },
+   "mass": 3.5,
+   "workToMake": 12000,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 1.7,
+    "range": 36.9,
+    "burstShotCount": 1,
+    "ticksBetweenBurstShots": 15,
+    "projectile": {
+     "defName": "Bullet_BoltActionRifle",
+     "label": "bolt-action rifle bullet",
+     "damageDef": "Bullet",
+     "damage": 18,
+     "stoppingPower": 1.5,
+     "speed": 70
+    },
+    "cooldown": 1.5,
+    "accuracy": {
+     "touch": 0.65,
+     "short": 0.8,
+     "medium": 0.9,
+     "long": 0.8
+    }
+   },
+   "tools": [
+    {
+     "label": "stock",
+     "capacities": [
+      "Blunt"
+     ],
+     "damageDefs": [
+      "Blunt"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    },
+    {
+     "label": "barrel",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    }
+   ]
+  },
+  {
+   "defName": "Gun_ChainShotgun_Unique",
+   "label": "unique chain shotgun",
+   "source": "Odyssey",
+   "techLevel": "Industrial",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsUnique"
+   ],
+   "weaponTags": [
+    "Gun",
+    "IndustrialGunAdvanced",
+    "ShortShots"
+   ],
+   "weaponClasses": [
+    "Ranged",
+    "ShortShots"
+   ],
+   "unique": true,
+   "uniqueCategories": [
+    "Ranged",
+    "PelletFiring",
+    "Gun",
+    "Shotgun",
+    "BurstFire",
+    "Attachable"
+   ],
+   "hasQuality": true,
+   "costList": {
+    "Steel": 70,
+    "ComponentIndustrial": 5
+   },
+   "mass": 4.5,
+   "workToMake": 31000,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 1.2,
+    "range": 12.9,
+    "burstShotCount": 3,
+    "ticksBetweenBurstShots": 10,
+    "projectile": {
+     "defName": "Bullet_Shotgun",
+     "label": "shotgun blast",
+     "damageDef": "Bullet",
+     "damage": 18,
+     "armorPenetration": 0.14,
+     "stoppingPower": 3,
+     "speed": 55
+    },
+    "cooldown": 1.35,
+    "accuracy": {
+     "touch": 0.57,
+     "short": 0.64,
+     "medium": 0.55,
+     "long": 0.45
+    }
+   },
+   "tools": [
+    {
+     "label": "stock",
+     "capacities": [
+      "Blunt"
+     ],
+     "damageDefs": [
+      "Blunt"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    },
+    {
+     "label": "barrel",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    }
+   ]
+  },
+  {
+   "defName": "Gun_ChargeLance_Unique",
+   "label": "unique charge lance",
+   "source": "Odyssey",
+   "techLevel": "Spacer",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsUnique"
+   ],
+   "weaponTags": [
+    "Gun",
+    "MechanoidGunMedium",
+    "SpacerGun"
+   ],
+   "weaponClasses": [
+    "Ranged",
+    "RangedHeavy"
+   ],
+   "unique": true,
+   "uniqueCategories": [
+    "Ranged",
+    "Gun",
+    "PulseCharge"
+   ],
+   "hasQuality": true,
+   "costList": {
+    "Plasteel": 60,
+    "ComponentSpacer": 3
+   },
+   "mass": 8,
+   "workToMake": 60000,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 1.7,
+    "range": 32.9,
+    "burstShotCount": 1,
+    "ticksBetweenBurstShots": 15,
+    "projectile": {
+     "defName": "Bullet_ChargeLance",
+     "label": "charge lance shot",
+     "damageDef": "Bullet",
+     "damage": 30,
+     "stoppingPower": 1.5,
+     "speed": 120
+    },
+    "cooldown": 2.7,
+    "accuracy": {
+     "touch": 0.65,
+     "short": 0.85,
+     "medium": 0.85,
+     "long": 0.75
+    }
+   },
+   "tools": [
+    {
+     "label": "barrel",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    }
+   ]
+  },
+  {
+   "defName": "Gun_ChargeRifle_Unique",
+   "label": "unique charge rifle",
+   "source": "Odyssey",
+   "techLevel": "Spacer",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsUnique"
+   ],
+   "weaponTags": [
+    "Gun",
+    "SpacerGun"
+   ],
+   "weaponClasses": [
+    "Ranged",
+    "RangedLight"
+   ],
+   "unique": true,
+   "uniqueCategories": [
+    "Ranged",
+    "Gun",
+    "Sighted",
+    "Rifle",
+    "BurstFire",
+    "LowStoppingPower",
+    "PulseCharge",
+    "Attachable"
+   ],
+   "hasQuality": true,
+   "costList": {
+    "Plasteel": 50,
+    "ComponentSpacer": 2
+   },
+   "mass": 4.6,
+   "workToMake": 45000,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 1,
+    "range": 27.9,
+    "burstShotCount": 3,
+    "ticksBetweenBurstShots": 12,
+    "projectile": {
+     "defName": "Bullet_ChargeRifle",
+     "label": "charge shot",
+     "damageDef": "Bullet",
+     "damage": 16,
+     "armorPenetration": 0.35,
+     "speed": 70
+    },
+    "cooldown": 2,
+    "accuracy": {
+     "touch": 0.55,
+     "short": 0.64,
+     "medium": 0.55,
+     "long": 0.45
+    }
+   },
+   "tools": [
+    {
+     "label": "stock",
+     "capacities": [
+      "Blunt"
+     ],
+     "damageDefs": [
+      "Blunt"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    },
+    {
+     "label": "barrel",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    }
+   ]
+  },
+  {
+   "defName": "Bow_Great_Unique",
+   "label": "unique greatbow",
+   "source": "Odyssey",
+   "techLevel": "Neolithic",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsUnique"
+   ],
+   "weaponTags": [
+    "Neolithic",
+    "NeolithicRangedHeavy",
+    "NeolithicRangedChief"
+   ],
+   "weaponClasses": [
+    "Neolithic",
+    "Ranged",
+    "RangedHeavy"
+   ],
+   "unique": true,
+   "uniqueCategories": [
+    "Ranged",
+    "Bow"
+   ],
+   "hasQuality": true,
+   "costList": {
+    "WoodLog": 60
+   },
+   "mass": 3,
+   "workToMake": 9000,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 2,
+    "range": 29.9,
+    "burstShotCount": 1,
+    "ticksBetweenBurstShots": 15,
+    "projectile": {
+     "defName": "Arrow_Great",
+     "label": "greatbow arrow",
+     "damageDef": "Arrow",
+     "damage": 17,
+     "armorPenetration": 0.15,
+     "stoppingPower": 1.5,
+     "speed": 49
+    },
+    "cooldown": 1.5,
+    "accuracy": {
+     "touch": 0.65,
+     "short": 0.85,
+     "medium": 0.75,
+     "long": 0.5
+    }
+   },
+   "tools": [
+    {
+     "label": "limb",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    }
+   ]
+  },
+  {
+   "defName": "Gun_HeavySMG_Unique",
+   "label": "unique heavy SMG",
+   "source": "Odyssey",
+   "techLevel": "Industrial",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsUnique"
+   ],
+   "weaponTags": [
+    "Gun",
+    "IndustrialGunAdvanced",
+    "ShortShots"
+   ],
+   "weaponClasses": [
+    "Ranged",
+    "ShortShots",
+    "RangedHeavy"
+   ],
+   "unique": true,
+   "uniqueCategories": [
+    "Ranged",
+    "BulletFiring",
+    "Gun",
+    "Sighted",
+    "BurstFire",
+    "LowStoppingPower",
+    "Attachable"
+   ],
+   "hasQuality": true,
+   "costList": {
+    "Steel": 75,
+    "ComponentIndustrial": 4
+   },
+   "mass": 3.5,
+   "workToMake": 24000,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 0.9,
+    "range": 22.9,
+    "burstShotCount": 3,
+    "ticksBetweenBurstShots": 11,
+    "projectile": {
+     "defName": "Bullet_HeavySMG",
+     "label": "heavy SMG bullet",
+     "damageDef": "Bullet",
+     "damage": 12,
+     "speed": 48
+    },
+    "cooldown": 1.65,
+    "accuracy": {
+     "touch": 0.85,
+     "short": 0.65,
+     "medium": 0.35,
+     "long": 0.2
+    }
+   },
+   "tools": [
+    {
+     "label": "grip",
+     "capacities": [
+      "Blunt"
+     ],
+     "damageDefs": [
+      "Blunt"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    },
+    {
+     "label": "barrel",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    }
+   ]
+  },
+  {
+   "defName": "Gun_LMG_Unique",
+   "label": "unique LMG",
+   "source": "Odyssey",
+   "techLevel": "Industrial",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsUnique"
+   ],
+   "weaponTags": [
+    "Gun",
+    "IndustrialGunAdvanced"
+   ],
+   "weaponClasses": [
+    "Ranged",
+    "RangedHeavy"
+   ],
+   "unique": true,
+   "uniqueCategories": [
+    "Ranged",
+    "BulletFiring",
+    "Gun",
+    "Sighted",
+    "BurstFire",
+    "Attachable"
+   ],
+   "hasQuality": true,
+   "costList": {
+    "Steel": 75,
+    "ComponentIndustrial": 5
+   },
+   "mass": 8.5,
+   "workToMake": 34000,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 1.8,
+    "range": 25.9,
+    "burstShotCount": 6,
+    "ticksBetweenBurstShots": 7,
+    "projectile": {
+     "defName": "Bullet_LMG",
+     "label": "LMG bullet",
+     "damageDef": "Bullet",
+     "damage": 12,
+     "stoppingPower": 1,
+     "speed": 46
+    },
+    "cooldown": 1.6,
+    "accuracy": {
+     "touch": 0.4,
+     "short": 0.48,
+     "medium": 0.35,
+     "long": 0.26
+    }
+   },
+   "tools": [
+    {
+     "label": "stock",
+     "capacities": [
+      "Blunt"
+     ],
+     "damageDefs": [
+      "Blunt"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    },
+    {
+     "label": "barrel",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    }
+   ]
+  },
+  {
+   "defName": "Gun_Minigun_Unique",
+   "label": "unique minigun",
+   "source": "Odyssey",
+   "techLevel": "Industrial",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsUnique"
+   ],
+   "weaponTags": [
+    "Gun",
+    "GunHeavy",
+    "Minigun"
+   ],
+   "weaponClasses": [
+    "Ranged",
+    "RangedHeavy"
+   ],
+   "unique": true,
+   "uniqueCategories": [
+    "Ranged",
+    "BulletFiring",
+    "Gun",
+    "BurstFire",
+    "LowStoppingPower"
+   ],
+   "hasQuality": true,
+   "costList": {
+    "Steel": 160,
+    "ComponentIndustrial": 20
+   },
+   "mass": 10,
+   "workToMake": 60000,
+   "maxHitPoints": 100,
+   "equippedStatOffsets": {
+    "MoveSpeed": -0.25
+   },
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 2.5,
+    "range": 30.9,
+    "burstShotCount": 25,
+    "ticksBetweenBurstShots": 5,
+    "projectile": {
+     "defName": "Bullet_Minigun",
+     "label": "minigun bullet",
+     "damageDef": "Bullet",
+     "damage": 10,
+     "speed": 70
+    },
+    "cooldown": 1.5,
+    "accuracy": {
+     "touch": 0.2,
+     "short": 0.25,
+     "medium": 0.25,
+     "long": 0.18
+    }
+   },
+   "tools": [
+    {
+     "label": "barrels",
+     "capacities": [
+      "Blunt"
+     ],
+     "damageDefs": [
+      "Blunt"
+     ],
+     "power": 11.7,
+     "cooldownTime": 2.6
+    }
+   ]
+  },
+  {
+   "defName": "Gun_Revolver_Unique",
+   "label": "unique revolver",
+   "source": "Odyssey",
+   "techLevel": "Industrial",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsUnique"
+   ],
+   "weaponTags": [
+    "Gun",
+    "SimpleGun",
+    "Revolver"
+   ],
+   "weaponClasses": [
+    "Ranged",
+    "RangedLight"
+   ],
+   "unique": true,
+   "uniqueCategories": [
+    "Ranged",
+    "BulletFiring",
+    "Gun",
+    "Pistol",
+    "Sighted"
+   ],
+   "hasQuality": true,
+   "costList": {
+    "Steel": 30,
+    "ComponentIndustrial": 2
+   },
+   "mass": 1.4,
+   "workToMake": 4000,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 0.3,
+    "range": 25.9,
+    "burstShotCount": 1,
+    "ticksBetweenBurstShots": 15,
+    "projectile": {
+     "defName": "Bullet_Revolver",
+     "label": "revolver bullet",
+     "damageDef": "Bullet",
+     "damage": 12,
+     "stoppingPower": 1,
+     "speed": 55
+    },
+    "cooldown": 1.6,
+    "accuracy": {
+     "touch": 0.8,
+     "short": 0.75,
+     "medium": 0.55,
+     "long": 0.4
+    }
+   },
+   "tools": [
+    {
+     "label": "grip",
+     "capacities": [
+      "Blunt"
+     ],
+     "damageDefs": [
+      "Blunt"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    },
+    {
+     "label": "barrel",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    }
+   ]
+  },
+  {
+   "defName": "Gun_SniperRifle_Unique",
+   "label": "unique sniper rifle",
+   "source": "Odyssey",
+   "techLevel": "Industrial",
+   "kind": "ranged",
+   "categories": [
+    "WeaponsUnique"
+   ],
+   "weaponTags": [
+    "SniperRifle"
+   ],
+   "weaponClasses": [
+    "Ranged",
+    "LongShots",
+    "RangedHeavy"
+   ],
+   "unique": true,
+   "uniqueCategories": [
+    "Ranged",
+    "BulletFiring",
+    "Gun",
+    "Scoped",
+    "Rifle"
+   ],
+   "hasQuality": true,
+   "costList": {
+    "Steel": 60,
+    "ComponentIndustrial": 8
+   },
+   "mass": 4,
+   "workToMake": 45000,
+   "maxHitPoints": 100,
+   "ranged": {
+    "verbClass": "Verb_Shoot",
+    "warmupTime": 3.5,
+    "range": 44.9,
+    "burstShotCount": 1,
+    "ticksBetweenBurstShots": 15,
+    "projectile": {
+     "defName": "Bullet_SniperRifle",
+     "label": "sniper rifle bullet",
+     "damageDef": "Bullet",
+     "damage": 25,
+     "stoppingPower": 1.5,
+     "speed": 100
+    },
+    "cooldown": 1.5,
+    "accuracy": {
+     "touch": 0.5,
+     "short": 0.7,
+     "medium": 0.88,
+     "long": 0.9
+    }
+   },
+   "tools": [
+    {
+     "label": "stock",
+     "capacities": [
+      "Blunt"
+     ],
+     "damageDefs": [
+      "Blunt"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    },
+    {
+     "label": "barrel",
+     "capacities": [
+      "Blunt",
+      "Poke"
+     ],
+     "damageDefs": [
+      "Blunt",
+      "Poke"
+     ],
+     "power": 9,
+     "cooldownTime": 2
+    }
+   ]
+  }
+ ],
+ "stuffs": [
+  {
+   "defName": "WoolAlpaca",
+   "label": "alpaca wool",
+   "source": "Core",
+   "categories": [
+    "Fabric"
+   ],
+   "sharp": 1,
+   "blunt": 1,
+   "meleeCooldown": 1,
+   "marketValue": 3.8,
+   "commonality": 0.12
+  },
+  {
+   "defName": "Leather_Armadillo",
+   "label": "armadillo leather",
+   "source": "Odyssey",
+   "categories": [
+    "Leathery"
+   ],
+   "sharp": 1,
+   "blunt": 1,
+   "meleeCooldown": 1,
+   "marketValue": 3.2,
+   "commonality": 0.01
+  },
+  {
+   "defName": "Leather_Bear",
+   "label": "bearskin",
+   "source": "Core",
+   "categories": [
+    "Leathery"
+   ],
+   "sharp": 1,
+   "blunt": 1,
+   "meleeCooldown": 1,
+   "marketValue": 3.4,
+   "commonality": 0.05
+  },
+  {
+   "defName": "Leather_Bird",
+   "label": "birdskin",
+   "source": "Core",
+   "categories": [
+    "Leathery"
+   ],
+   "sharp": 1,
+   "blunt": 1,
+   "meleeCooldown": 1,
+   "marketValue": 1.8,
+   "commonality": 0.1
+  },
+  {
+   "defName": "WoolBison",
+   "label": "bison wool",
+   "source": "Core",
+   "categories": [
+    "Fabric"
+   ],
+   "sharp": 1,
+   "blunt": 1,
+   "meleeCooldown": 1,
+   "marketValue": 2.7,
+   "commonality": 0.12
+  },
+  {
+   "defName": "Leather_Bluefur",
+   "label": "bluefur",
+   "source": "Core",
+   "categories": [
+    "Leathery"
+   ],
+   "sharp": 1,
+   "blunt": 1,
+   "meleeCooldown": 1,
+   "marketValue": 2.3,
+   "commonality": 0.025
+  },
+  {
+   "defName": "Leather_Camel",
+   "label": "camelhide",
+   "source": "Core",
+   "categories": [
+    "Leathery"
+   ],
+   "sharp": 1,
+   "blunt": 1,
+   "meleeCooldown": 1,
+   "marketValue": 2.3,
+   "commonality": 0.05
+  },
+  {
+   "defName": "Leather_Chinchilla",
+   "label": "chinchilla fur",
+   "source": "Core",
+   "categories": [
+    "Leathery"
+   ],
+   "sharp": 1,
+   "blunt": 1,
+   "meleeCooldown": 1,
+   "marketValue": 6.5,
+   "commonality": 0.025
+  },
+  {
+   "defName": "Cloth",
+   "label": "cloth",
+   "source": "Core",
+   "categories": [
+    "Fabric"
+   ],
+   "sharp": 1,
+   "blunt": 1,
+   "meleeCooldown": 1,
+   "marketValue": 1.5,
+   "commonality": 1.4
+  },
+  {
+   "defName": "ComponentIndustrial",
+   "label": "component",
+   "source": "Core",
+   "sharp": 1,
+   "blunt": 1,
+   "meleeCooldown": 1,
+   "marketValue": 32
+  },
+  {
+   "defName": "DevilstrandCloth",
+   "label": "devilstrand",
+   "source": "Core",
+   "categories": [
+    "Fabric"
+   ],
+   "sharp": 1,
+   "blunt": 1,
+   "meleeCooldown": 1,
+   "marketValue": 5.5,
+   "commonality": 0.2
+  },
+  {
+   "defName": "Leather_Dog",
+   "label": "dog leather",
+   "source": "Core",
+   "categories": [
+    "Leathery"
+   ],
+   "sharp": 1,
+   "blunt": 1,
+   "meleeCooldown": 1,
+   "marketValue": 2,
+   "commonality": 0.075
+  },
+  {
+   "defName": "Leather_Elephant",
+   "label": "elephant leather",
+   "source": "Core",
+   "categories": [
+    "Leathery"
+   ],
+   "sharp": 1,
+   "blunt": 1,
+   "meleeCooldown": 1,
+   "marketValue": 3,
+   "commonality": 0.025
+  },
+  {
+   "defName": "Leather_Fox",
+   "label": "foxfur",
+   "source": "Core",
+   "categories": [
+    "Leathery"
+   ],
+   "sharp": 1,
+   "blunt": 1,
+   "meleeCooldown": 1,
+   "marketValue": 3.5,
+   "commonality": 0.075
+  },
+  {
+   "defName": "Gold",
+   "label": "gold",
+   "source": "Core",
+   "categories": [
+    "Metallic"
+   ],
+   "sharp": 0.75,
+   "blunt": 1,
+   "meleeCooldown": 1,
+   "marketValue": 10,
+   "commonality": 0.02
+  },
+  {
+   "defName": "BlocksGranite",
+   "label": "granite blocks",
+   "source": "Core",
+   "categories": [
+    "Stony"
+   ],
+   "sharp": 0.65,
+   "blunt": 1,
+   "meleeCooldown": 1.3,
+   "marketValue": 0.9,
+   "commonality": 0.2
+  },
+  {
+   "defName": "Leather_GuineaPig",
+   "label": "guinea pig fur",
+   "source": "Core",
+   "categories": [
+    "Leathery"
+   ],
+   "sharp": 1,
+   "blunt": 1,
+   "meleeCooldown": 1,
+   "marketValue": 5,
+   "commonality": 0.025
+  },
+  {
+   "defName": "Leather_Heavy",
+   "label": "heavy fur",
+   "source": "Core",
+   "categories": [
+    "Leathery"
+   ],
+   "sharp": 1,
+   "blunt": 1,
+   "meleeCooldown": 1,
+   "marketValue": 3.3,
+   "commonality": 0.025
+  },
+  {
+   "defName": "Leather_Hippo",
+   "label": "hippo leather",
+   "source": "Odyssey",
+   "categories": [
+    "Leathery"
+   ],
+   "sharp": 1,
+   "blunt": 1,
+   "meleeCooldown": 1,
+   "marketValue": 3.7,
+   "commonality": 0.01
+  },
+  {
+   "defName": "Leather_Human",
+   "label": "human leather",
+   "source": "Core",
+   "categories": [
+    "Leathery"
+   ],
+   "sharp": 1,
+   "blunt": 1,
+   "meleeCooldown": 1,
+   "marketValue": 4.2,
+   "commonality": 0.0025
+  },
+  {
+   "defName": "Hyperweave",
+   "label": "hyperweave",
+   "source": "Core",
+   "categories": [
+    "Fabric"
+   ],
+   "sharp": 1,
+   "blunt": 1,
+   "meleeCooldown": 1,
+   "marketValue": 9,
+   "commonality": 0.1
+  },
+  {
+   "defName": "Jade",
+   "label": "jade",
+   "source": "Core",
+   "categories": [
+    "Stony"
+   ],
+   "sharp": 1,
+   "blunt": 1.5,
+   "meleeCooldown": 1.3,
+   "marketValue": 5,
+   "commonality": 0.05
+  },
+  {
+   "defName": "Leather_Light",
+   "label": "lightleather",
+   "source": "Core",
+   "categories": [
+    "Leathery"
+   ],
+   "sharp": 1,
+   "blunt": 1,
+   "meleeCooldown": 1,
+   "marketValue": 1.9,
+   "commonality": 0.25
+  },
+  {
+   "defName": "BlocksLimestone",
+   "label": "limestone blocks",
+   "source": "Core",
+   "categories": [
+    "Stony"
+   ],
+   "sharp": 0.6,
+   "blunt": 1,
+   "meleeCooldown": 1.3,
+   "marketValue": 0.9,
+   "commonality": 0.2
+  },
+  {
+   "defName": "Leather_Lizard",
+   "label": "lizardskin",
+   "source": "Core",
+   "categories": [
+    "Leathery"
+   ],
+   "sharp": 1,
+   "blunt": 1,
+   "meleeCooldown": 1,
+   "marketValue": 2.1,
+   "commonality": 0.075
+  },
+  {
+   "defName": "BlocksMarble",
+   "label": "marble blocks",
+   "source": "Core",
+   "categories": [
+    "Stony"
+   ],
+   "sharp": 0.6,
+   "blunt": 1,
+   "meleeCooldown": 1.3,
+   "marketValue": 0.9,
+   "commonality": 0.2
+  },
+  {
+   "defName": "Leather_Mastodon",
+   "label": "mastodon leather",
+   "source": "Odyssey",
+   "categories": [
+    "Leathery"
+   ],
+   "sharp": 1,
+   "blunt": 1,
+   "meleeCooldown": 1,
+   "marketValue": 3,
+   "commonality": 0.025
+  },
+  {
+   "defName": "WoolMastodon",
+   "label": "mastodon wool",
+   "source": "Odyssey",
+   "categories": [
+    "Fabric"
+   ],
+   "sharp": 1,
+   "blunt": 1,
+   "meleeCooldown": 1,
+   "marketValue": 2.7,
+   "commonality": 0.12
+  },
+  {
+   "defName": "WoolMegasloth",
+   "label": "megasloth wool",
+   "source": "Core",
+   "categories": [
+    "Fabric"
+   ],
+   "sharp": 1,
+   "blunt": 1,
+   "meleeCooldown": 1,
+   "marketValue": 2.7,
+   "commonality": 0.12
+  },
+  {
+   "defName": "Leather_Mink",
+   "label": "mink fur",
+   "source": "Odyssey",
+   "categories": [
+    "Leathery"
+   ],
+   "sharp": 1,
+   "blunt": 1,
+   "meleeCooldown": 1,
+   "marketValue": 5.2,
+   "commonality": 0.01
+  },
+  {
+   "defName": "WoolMuffalo",
+   "label": "muffalo wool",
+   "source": "Core",
+   "categories": [
+    "Fabric"
+   ],
+   "sharp": 1,
+   "blunt": 1,
+   "meleeCooldown": 1,
+   "marketValue": 2.7,
+   "commonality": 0.12
+  },
+  {
+   "defName": "WoolMuskox",
+   "label": "muskox wool",
+   "source": "Odyssey",
+   "categories": [
+    "Fabric"
+   ],
+   "sharp": 1,
+   "blunt": 1,
+   "meleeCooldown": 1,
+   "marketValue": 2.7,
+   "commonality": 0.12
+  },
+  {
+   "defName": "Obsidian",
+   "label": "obsidian",
+   "source": "Odyssey",
+   "categories": [
+    "Stony",
+    "Metallic"
+   ],
+   "sharp": 1.4,
+   "blunt": 1,
+   "meleeCooldown": 1,
+   "marketValue": 5,
+   "commonality": 0.01
+  },
+  {
+   "defName": "Leather_Panthera",
+   "label": "panthera fur",
+   "source": "Core",
+   "categories": [
+    "Leathery"
+   ],
+   "sharp": 1,
+   "blunt": 1,
+   "meleeCooldown": 1,
+   "marketValue": 3,
+   "commonality": 0.075
+  },
+  {
+   "defName": "Leather_Patch",
+   "label": "patchleather",
+   "source": "Core",
+   "categories": [
+    "Leathery"
+   ],
+   "sharp": 1,
+   "blunt": 1,
+   "meleeCooldown": 1,
+   "marketValue": 1.5,
+   "commonality": 0.075
+  },
+  {
+   "defName": "Leather_Pig",
+   "label": "pigskin",
+   "source": "Core",
+   "categories": [
+    "Leathery"
+   ],
+   "sharp": 1,
+   "blunt": 1,
+   "meleeCooldown": 1,
+   "marketValue": 1.9,
+   "commonality": 0.05
+  },
+  {
+   "defName": "Leather_Plain",
+   "label": "plainleather",
+   "source": "Core",
+   "categories": [
+    "Leathery"
+   ],
+   "sharp": 1,
+   "blunt": 1,
+   "meleeCooldown": 1,
+   "marketValue": 2.1,
+   "commonality": 0.2
+  },
+  {
+   "defName": "Plasteel",
+   "label": "plasteel",
+   "source": "Core",
+   "categories": [
+    "Metallic"
+   ],
+   "sharp": 1.1,
+   "blunt": 0.9,
+   "meleeCooldown": 0.8,
+   "marketValue": 9,
+   "commonality": 0.05
+  },
+  {
+   "defName": "Leather_Rhinoceros",
+   "label": "rhinoceros leather",
+   "source": "Core",
+   "categories": [
+    "Leathery"
+   ],
+   "sharp": 1,
+   "blunt": 1,
+   "meleeCooldown": 1,
+   "marketValue": 4.2,
+   "commonality": 0.025
+  },
+  {
+   "defName": "BlocksSandstone",
+   "label": "sandstone blocks",
+   "source": "Core",
+   "categories": [
+    "Stony"
+   ],
+   "sharp": 0.5,
+   "blunt": 1,
+   "meleeCooldown": 1.3,
+   "marketValue": 0.9,
+   "commonality": 0.2
+  },
+  {
+   "defName": "Leather_Sealskin",
+   "label": "sealskin",
+   "source": "Odyssey",
+   "categories": [
+    "Leathery"
+   ],
+   "sharp": 1,
+   "blunt": 1,
+   "meleeCooldown": 1,
+   "marketValue": 4,
+   "commonality": 0.025
+  },
+  {
+   "defName": "WoolSheep",
+   "label": "sheep wool",
+   "source": "Core",
+   "categories": [
+    "Fabric"
+   ],
+   "sharp": 1,
+   "blunt": 1,
+   "meleeCooldown": 1,
+   "marketValue": 2.7,
+   "commonality": 0.24
+  },
+  {
+   "defName": "Silver",
+   "label": "silver",
+   "source": "Core",
+   "categories": [
+    "Metallic"
+   ],
+   "sharp": 0.85,
+   "blunt": 1,
+   "meleeCooldown": 1,
+   "marketValue": 1,
+   "commonality": 0.05
+  },
+  {
+   "defName": "BlocksSlate",
+   "label": "slate blocks",
+   "source": "Core",
+   "categories": [
+    "Stony"
+   ],
+   "sharp": 0.6,
+   "blunt": 1,
+   "meleeCooldown": 1.3,
+   "marketValue": 0.9,
+   "commonality": 0.2
+  },
+  {
+   "defName": "Steel",
+   "label": "steel",
+   "source": "Core",
+   "categories": [
+    "Metallic"
+   ],
+   "sharp": 1,
+   "blunt": 1,
+   "meleeCooldown": 1,
+   "marketValue": 1.9,
+   "commonality": 1
+  },
+  {
+   "defName": "Synthread",
+   "label": "synthread",
+   "source": "Core",
+   "categories": [
+    "Fabric"
+   ],
+   "sharp": 1,
+   "blunt": 1,
+   "meleeCooldown": 1,
+   "marketValue": 4,
+   "commonality": 0.15
+  },
+  {
+   "defName": "Leather_Thrumbo",
+   "label": "thrumbofur",
+   "source": "Core",
+   "categories": [
+    "Leathery"
+   ],
+   "sharp": 1,
+   "blunt": 1,
+   "meleeCooldown": 1,
+   "marketValue": 14,
+   "commonality": 0.0025
+  },
+  {
+   "defName": "Leather_AlphaThrumbo",
+   "label": "thrumbomane",
+   "source": "Odyssey",
+   "categories": [
+    "Leathery"
+   ],
+   "sharp": 1,
+   "blunt": 1,
+   "meleeCooldown": 1,
+   "marketValue": 20,
+   "commonality": 0
+  },
+  {
+   "defName": "Uranium",
+   "label": "uranium",
+   "source": "Core",
+   "categories": [
+    "Metallic"
+   ],
+   "sharp": 1.1,
+   "blunt": 1.5,
+   "meleeCooldown": 1.1,
+   "marketValue": 6,
+   "commonality": 0.05
+  },
+  {
+   "defName": "BlocksVacstone",
+   "label": "vacstone blocks",
+   "source": "Odyssey",
+   "categories": [
+    "Stony"
+   ],
+   "sharp": 0.6,
+   "blunt": 1,
+   "meleeCooldown": 1.3,
+   "marketValue": 2,
+   "commonality": 0.2
+  },
+  {
+   "defName": "Leather_Wolf",
+   "label": "wolfskin",
+   "source": "Core",
+   "categories": [
+    "Leathery"
+   ],
+   "sharp": 1,
+   "blunt": 1,
+   "meleeCooldown": 1,
+   "marketValue": 3,
+   "commonality": 0.075
+  },
+  {
+   "defName": "WoodLog",
+   "label": "wood",
+   "source": "Core",
+   "categories": [
+    "Woody"
+   ],
+   "sharp": 0.4,
+   "blunt": 0.9,
+   "meleeCooldown": 1,
+   "marketValue": 1.2,
+   "commonality": 1
+  }
+ ],
+ "armorPresets": [
+  {
+   "defName": "Apparel_Vacsuit",
+   "label": "vacsuit",
+   "source": "Odyssey",
+   "sharp": 0.52,
+   "blunt": 0.25,
+   "heat": 0.66
+  },
+  {
+   "defName": "Apparel_VacsuitChildren",
+   "label": "kid vacsuit",
+   "source": "Odyssey",
+   "sharp": 0.52,
+   "blunt": 0.2,
+   "heat": 0.66
+  },
+  {
+   "defName": "Apparel_FlakJacket",
+   "label": "flak jacket",
+   "source": "Core",
+   "sharp": 0.55,
+   "blunt": 0.08,
+   "heat": 0.1
+  },
+  {
+   "defName": "Apparel_ArmorRecon",
+   "label": "recon armor",
+   "source": "Core",
+   "sharp": 0.92,
+   "blunt": 0.4,
+   "heat": 0.46
+  },
+  {
+   "defName": "Apparel_MechlordSuit",
+   "label": "mechlord suit",
+   "source": "Biotech",
+   "sharp": 0.92,
+   "blunt": 0.4,
+   "heat": 0.46
+  },
+  {
+   "defName": "Apparel_FlakVest",
+   "label": "flak vest",
+   "source": "Core",
+   "sharp": 1,
+   "blunt": 0.36,
+   "heat": 0.27
+  },
+  {
+   "defName": "Apparel_PowerArmor",
+   "label": "marine armor",
+   "source": "Core",
+   "sharp": 1.06,
+   "blunt": 0.45,
+   "heat": 0.54
+  }
+ ],
+ "weaponTraits": [
+  {
+   "defName": "QuickReload",
+   "label": "quick reload",
+   "source": "Odyssey",
+   "weaponCategory": "Gun",
+   "statFactors": {
+    "RangedWeapon_Cooldown": 0.8
+   },
+   "statOffsets": {
+    "MarketValue": 50
+   }
+  },
+  {
+   "defName": "AimAssistance",
+   "label": "aim assistance",
+   "source": "Odyssey",
+   "weaponCategory": "Gun",
+   "statFactors": {
+    "AccuracyTouch": 1.2,
+    "AccuracyShort": 1.2,
+    "AccuracyMedium": 1.2,
+    "AccuracyLong": 1.2
+   },
+   "statOffsets": {
+    "MarketValue": 70
+   },
+   "ignoresAccuracyMaluses": true
+  },
+  {
+   "defName": "CustomGrip",
+   "label": "custom grip",
+   "source": "Odyssey",
+   "weaponCategory": "Gun",
+   "statFactors": {
+    "AccuracyTouch": 1.1,
+    "AccuracyShort": 1.1
+   },
+   "statOffsets": {
+    "Beauty": 2,
+    "MarketValue": 15
+   },
+   "canGenerateAlone": false
+  },
+  {
+   "defName": "StabilizerBrace",
+   "label": "pistol brace",
+   "source": "Odyssey",
+   "weaponCategory": "Pistol",
+   "statFactors": {
+    "AccuracyTouch": 1.2,
+    "AccuracyShort": 1.2,
+    "AccuracyMedium": 1.2,
+    "AccuracyLong": 1.2
+   },
+   "statOffsets": {
+    "MarketValue": 35
+   }
+  },
+  {
+   "defName": "PulseCharger",
+   "label": "pulse charger",
+   "source": "Odyssey",
+   "weaponCategory": "Pistol",
+   "statFactors": {
+    "AccuracyTouch": 0.8,
+    "AccuracyShort": 0.8,
+    "AccuracyMedium": 0.8,
+    "AccuracyLong": 0.8
+   },
+   "statOffsets": {
+    "RangedWeapon_DamageMultiplier": 0.6,
+    "RangedWeapon_ArmorPenetrationMultiplier": 0.3,
+    "MarketValue": 80
+   }
+  },
+  {
+   "defName": "ToxRounds",
+   "label": "tox rounds",
+   "source": "Odyssey",
+   "weaponCategory": "BulletFiring",
+   "statOffsets": {
+    "MarketValue": 50
+   },
+   "damageDefOverride": "Bullet_TraitTox",
+   "exclusionTags": [
+    "AmmoType",
+    "Color"
+   ]
+  },
+  {
+   "defName": "PiercingRounds",
+   "label": "piercing rounds",
+   "source": "Odyssey",
+   "weaponCategory": "BulletFiring",
+   "statOffsets": {
+    "RangedWeapon_ArmorPenetrationMultiplier": 0.2,
+    "MarketValue": 40
+   },
+   "exclusionTags": [
+    "AmmoType"
+   ]
+  },
+  {
+   "defName": "IncendiaryRounds",
+   "label": "incendiary rounds",
+   "source": "Odyssey",
+   "weaponCategory": "BulletFiring",
+   "statOffsets": {
+    "MarketValue": 90
+   },
+   "damageDefOverride": "Bullet_TraitIncendiary",
+   "exclusionTags": [
+    "AmmoType",
+    "Color"
+   ]
+  },
+  {
+   "defName": "EMPRounds",
+   "label": "EMP rounds",
+   "source": "Odyssey",
+   "weaponCategory": "BulletFiring",
+   "statOffsets": {
+    "MarketValue": 75
+   },
+   "extraDamages": [
+    {
+     "def": "EMP",
+     "amount": 4
+    }
+   ],
+   "exclusionTags": [
+    "AmmoType",
+    "Color"
+   ]
+  },
+  {
+   "defName": "HollowPointRounds",
+   "label": "hollow-point rounds",
+   "source": "Odyssey",
+   "weaponCategory": "BulletFiring",
+   "statOffsets": {
+    "RangedWeapon_DamageMultiplier": 0.2,
+    "MarketValue": 85
+   },
+   "exclusionTags": [
+    "AmmoType"
+   ]
+  },
+  {
+   "defName": "HighPowerRounds",
+   "label": "high-power rounds",
+   "source": "Odyssey",
+   "weaponCategory": "BulletFiring",
+   "statFactors": {
+    "AccuracyTouch": 0.9,
+    "AccuracyShort": 0.9,
+    "AccuracyMedium": 0.9,
+    "AccuracyLong": 0.9
+   },
+   "statOffsets": {
+    "RangedWeapon_DamageMultiplier": 0.3,
+    "RangedWeapon_ArmorPenetrationMultiplier": 0.15,
+    "MarketValue": 60
+   },
+   "exclusionTags": [
+    "AmmoType"
+   ]
+  },
+  {
+   "defName": "ToxPellets",
+   "label": "toxic pellets",
+   "source": "Odyssey",
+   "weaponCategory": "PelletFiring",
+   "statOffsets": {
+    "MarketValue": 50
+   },
+   "damageDefOverride": "Bullet_TraitTox",
+   "exclusionTags": [
+    "AmmoType",
+    "Color"
+   ]
+  },
+  {
+   "defName": "IncendiaryPellets",
+   "label": "incendiary pellets",
+   "source": "Odyssey",
+   "weaponCategory": "PelletFiring",
+   "statOffsets": {
+    "MarketValue": 100
+   },
+   "damageDefOverride": "Bullet_TraitIncendiary",
+   "exclusionTags": [
+    "AmmoType",
+    "Color"
+   ]
+  },
+  {
+   "defName": "BirdshotPellets",
+   "label": "birdshot pellets",
+   "source": "Odyssey",
+   "weaponCategory": "PelletFiring",
+   "statFactors": {
+    "AccuracyTouch": 1.3,
+    "AccuracyShort": 1.2,
+    "AccuracyMedium": 0.95,
+    "AccuracyLong": 0.9
+   },
+   "statOffsets": {
+    "MarketValue": 10,
+    "RangedWeapon_ArmorPenetrationMultiplier": -0.25
+   },
+   "canGenerateAlone": false,
+   "exclusionTags": [
+    "AmmoType"
+   ]
+  },
+  {
+   "defName": "PiercingArrows",
+   "label": "piercing arrows",
+   "source": "Odyssey",
+   "weaponCategory": "Bow",
+   "statOffsets": {
+    "RangedWeapon_ArmorPenetrationMultiplier": 0.3,
+    "MarketValue": 40
+   },
+   "exclusionTags": [
+    "AmmoType"
+   ]
+  },
+  {
+   "defName": "ParalyticArrows",
+   "label": "paralytic arrows",
+   "source": "Odyssey",
+   "weaponCategory": "Bow",
+   "statOffsets": {
+    "MarketValue": 80
+   },
+   "damageDefOverride": "Nerve",
+   "exclusionTags": [
+    "AmmoType"
+   ]
+  },
+  {
+   "defName": "BroadheadArrows",
+   "label": "broadhead arrows",
+   "source": "Odyssey",
+   "weaponCategory": "Bow",
+   "statOffsets": {
+    "RangedWeapon_DamageMultiplier": 0.3,
+    "MarketValue": 60
+   },
+   "exclusionTags": [
+    "AmmoType"
+   ]
+  },
+  {
+   "defName": "LightweightArrows",
+   "label": "lightweight arrows",
+   "source": "Odyssey",
+   "weaponCategory": "Bow",
+   "statOffsets": {
+    "RangedWeapon_RangeMultiplier": 0.3,
+    "RangedWeapon_DamageMultiplier": -0.1,
+    "MarketValue": 30
+   },
+   "exclusionTags": [
+    "AmmoType"
+   ]
+  },
+  {
+   "defName": "ReinforcedLimbs",
+   "label": "reinforced bow limbs",
+   "source": "Odyssey",
+   "weaponCategory": "Bow",
+   "statOffsets": {
+    "RangedWeapon_RangeMultiplier": 0.15,
+    "MarketValue": 30
+   }
+  },
+  {
+   "defName": "ExtendedBarrel",
+   "label": "extended barrel",
+   "source": "Odyssey",
+   "weaponCategory": "Rifle",
+   "statOffsets": {
+    "RangedWeapon_RangeMultiplier": 0.2,
+    "MarketValue": 60
+   },
+   "exclusionTags": [
+    "Barrel"
+   ]
+  },
+  {
+   "defName": "ImprovedSights",
+   "label": "tactical sight",
+   "source": "Odyssey",
+   "weaponCategory": "Sighted",
+   "statFactors": {
+    "AccuracyMedium": 1.2,
+    "AccuracyLong": 1.2
+   },
+   "statOffsets": {
+    "MarketValue": 35
+   },
+   "exclusionTags": [
+    "Sights"
+   ]
+  },
+  {
+   "defName": "ShoddySights",
+   "label": "shoddy sights",
+   "source": "Odyssey",
+   "weaponCategory": "Sighted",
+   "statFactors": {
+    "MarketValue": 0.85,
+    "AccuracyMedium": 0.8,
+    "AccuracyLong": 0.8
+   },
+   "canGenerateAlone": false,
+   "exclusionTags": [
+    "Sights"
+   ]
+  },
+  {
+   "defName": "PrecisionScope",
+   "label": "tracking scope",
+   "source": "Odyssey",
+   "weaponCategory": "Scoped",
+   "statOffsets": {
+    "RangedWeapon_WarmupMultiplier": -0.25,
+    "MarketValue": 60
+   },
+   "exclusionTags": [
+    "Scope"
+   ]
+  },
+  {
+   "defName": "RangefinderScope",
+   "label": "rangefinder",
+   "source": "Odyssey",
+   "weaponCategory": "Scoped",
+   "statOffsets": {
+    "RangedWeapon_RangeMultiplier": 0.1,
+    "MarketValue": 20
+   },
+   "exclusionTags": [
+    "Scope"
+   ]
+  },
+  {
+   "defName": "ShortenedBarrel",
+   "label": "shortened barrel",
+   "source": "Odyssey",
+   "weaponCategory": "Shotgun",
+   "statOffsets": {
+    "RangedWeapon_WarmupMultiplier": -0.2,
+    "RangedWeapon_RangeMultiplier": -0.2
+   },
+   "exclusionTags": [
+    "Barrel"
+   ]
+  },
+  {
+   "defName": "RapidFire",
+   "label": "rapid fire",
+   "source": "Odyssey",
+   "weaponCategory": "BurstFire",
+   "statOffsets": {
+    "MarketValue": 15
+   },
+   "burstShotSpeedMultiplier": 2
+  },
+  {
+   "defName": "ExtendedMagazine",
+   "label": "extended magazine",
+   "source": "Odyssey",
+   "weaponCategory": "BurstFire",
+   "statOffsets": {
+    "MarketValue": 60
+   },
+   "burstShotCountMultiplier": 1.5
+  },
+  {
+   "defName": "ChargeCapacitor",
+   "label": "charge capacitor",
+   "source": "Odyssey",
+   "weaponCategory": "PulseCharge",
+   "statOffsets": {
+    "RangedWeapon_ArmorPenetrationMultiplier": 0.2,
+    "RangedWeapon_DamageMultiplier": 0.35,
+    "MarketValue": 120
+   }
+  },
+  {
+   "defName": "EMPPulser",
+   "label": "EMP pulser",
+   "source": "Odyssey",
+   "weaponCategory": "PulseCharge",
+   "statOffsets": {
+    "MarketValue": 80
+   },
+   "ability": "EMPPulse",
+   "exclusionTags": [
+    "Ability"
+   ]
+  },
+  {
+   "defName": "FrequencyAmplifier",
+   "label": "frequency amplifier",
+   "source": "Odyssey",
+   "weaponCategory": "BeamWeapon",
+   "statFactors": {
+    "RangedWeapon_Cooldown": 1.5
+   },
+   "statOffsets": {
+    "RangedWeapon_RangeMultiplier": 0.3,
+    "RangedWeapon_DamageMultiplier": 0.5,
+    "MarketValue": 120
+   }
+  },
+  {
+   "defName": "OversizedRounds",
+   "label": "heavy rounds",
+   "source": "Odyssey",
+   "weaponCategory": "LowStoppingPower",
+   "statOffsets": {
+    "RangedWeapon_DamageMultiplier": 0.1,
+    "MarketValue": 50
+   },
+   "additionalStoppingPower": 2,
+   "exclusionTags": [
+    "AmmoType"
+   ]
+  },
+  {
+   "defName": "Ornamental",
+   "label": "ornamental",
+   "source": "Odyssey",
+   "weaponCategory": "Ranged",
+   "statOffsets": {
+    "RangedWeapon_DamageMultiplier": -0.15,
+    "Beauty": 5,
+    "MarketValue": 40
+   },
+   "canGenerateAlone": false,
+   "exclusionTags": [
+    "Appearance"
+   ]
+  },
+  {
+   "defName": "Ugly",
+   "label": "ugly",
+   "source": "Odyssey",
+   "weaponCategory": "Ranged",
+   "statFactors": {
+    "MarketValue": 0.8
+   },
+   "statOffsets": {
+    "Beauty": -4
+   },
+   "canGenerateAlone": false,
+   "exclusionTags": [
+    "Appearance"
+   ]
+  },
+  {
+   "defName": "Lightweight",
+   "label": "lightweight",
+   "source": "Odyssey",
+   "weaponCategory": "Ranged",
+   "statFactors": {
+    "Mass": 0.75
+   },
+   "statOffsets": {
+    "RangedWeapon_WarmupMultiplier": -0.2,
+    "MarketValue": 80
+   },
+   "exclusionTags": [
+    "Weight"
+   ]
+  },
+  {
+   "defName": "Cumbersome",
+   "label": "cumbersome",
+   "source": "Odyssey",
+   "weaponCategory": "Ranged",
+   "statFactors": {
+    "MarketValue": 0.8
+   },
+   "statOffsets": {
+    "RangedWeapon_WarmupMultiplier": 0.2
+   },
+   "canGenerateAlone": false,
+   "exclusionTags": [
+    "Weight"
+   ]
+  },
+  {
+   "defName": "GoldInlay",
+   "label": "gold inlay",
+   "source": "Odyssey",
+   "weaponCategory": "Ranged",
+   "statFactors": {
+    "MarketValue": 2
+   },
+   "statOffsets": {
+    "Beauty": 20
+   },
+   "canGenerateAlone": false,
+   "exclusionTags": [
+    "Color"
+   ]
+  },
+  {
+   "defName": "JadeInlay",
+   "label": "jade inlay",
+   "source": "Odyssey",
+   "weaponCategory": "Ranged",
+   "statFactors": {
+    "MarketValue": 1.4
+   },
+   "statOffsets": {
+    "Beauty": 10
+   },
+   "canGenerateAlone": false,
+   "exclusionTags": [
+    "Color"
+   ]
+  },
+  {
+   "defName": "GrenadeLauncher",
+   "label": "grenade launcher",
+   "source": "Odyssey",
+   "weaponCategory": "Attachable",
+   "statOffsets": {
+    "MarketValue": 80
+   },
+   "ability": "LaunchFragGrenade",
+   "exclusionTags": [
+    "Attachment",
+    "Ability"
+   ]
+  },
+  {
+   "defName": "EMPLauncher",
+   "label": "EMP cannon",
+   "source": "Odyssey",
+   "weaponCategory": "Attachable",
+   "statOffsets": {
+    "MarketValue": 60
+   },
+   "ability": "LaunchEMPShell",
+   "exclusionTags": [
+    "Attachment",
+    "Ability"
+   ]
+  },
+  {
+   "defName": "SmokeLauncher",
+   "label": "smoke launcher",
+   "source": "Odyssey",
+   "weaponCategory": "Attachable",
+   "statOffsets": {
+    "MarketValue": 50
+   },
+   "ability": "LaunchSmokeShell",
+   "exclusionTags": [
+    "Attachment",
+    "Ability"
+   ]
+  },
+  {
+   "defName": "IncendiaryLauncher",
+   "label": "incendiary launcher",
+   "source": "Odyssey",
+   "weaponCategory": "Attachable",
+   "statOffsets": {
+    "MarketValue": 70
+   },
+   "ability": "LaunchIncendiaryShell",
+   "exclusionTags": [
+    "Attachment",
+    "Ability"
+   ]
+  },
+  {
+   "defName": "BioferriteBurner",
+   "label": "bioferrite burner",
+   "source": "Odyssey",
+   "weaponCategory": "Attachable",
+   "statOffsets": {
+    "MarketValue": 80
+   },
+   "ability": "HellcatBurner",
+   "exclusionTags": [
+    "Attachment",
+    "Ability"
+   ]
+  }
+ ]
+}
